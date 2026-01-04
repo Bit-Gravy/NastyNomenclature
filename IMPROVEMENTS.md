@@ -1,6 +1,7 @@
-# Naughty Nomenclature - Code Improvements Summary
+# Nasty Nomenclature - Code Improvements Summary
 
 ## Overview
+
 Comprehensive refactoring and optimization of the single-page HTML application for better performance, security, accessibility, and maintainability.
 
 ---
@@ -8,6 +9,7 @@ Comprehensive refactoring and optimization of the single-page HTML application f
 ## ✅ Changes Implemented
 
 ### 1. **Removed Injected Google Closure Library Code** 🗑️
+
 - **Status**: DONE
 - **Impact**: Reduced bloated JavaScript from Google's Closure compiler
 - **Details**:
@@ -16,10 +18,12 @@ Comprehensive refactoring and optimization of the single-page HTML application f
   - **Benefit**: Cleaner codebase, easier to understand and maintain
 
 ### 2. **Fixed Security Vulnerability (XSS Prevention)** 🔒
+
 - **Status**: DONE
 - **Vulnerability**: Inline `onclick="navigator.clipboard.writeText('...')"` with unescaped user data
 - **Solution**: Moved to proper event listeners with data attributes
 - **New Implementation**:
+
   ```javascript
   // Before: Vulnerable inline onclick
   <button onclick="navigator.clipboard.writeText('${value}')">Copy</button>
@@ -28,9 +32,11 @@ Comprehensive refactoring and optimization of the single-page HTML application f
   <button class="copy-btn" data-value="${value}">Copy</button>
   // JS: btn.addEventListener("click", handleCopyClick);
   ```
+
 - **Additional**: Added clipboard API fallback for older browsers
 
 ### 3. **Enhanced Image Handling** 🖼️
+
 - **Status**: DONE
 - **Problem**: All images used blob URLs (temporary browser memory URLs) with go-data-src prompts
 - **Solution**: Replaced with responsive gradient divs using Material Icons as placeholders
@@ -45,6 +51,7 @@ Comprehensive refactoring and optimization of the single-page HTML application f
   - Forbidden zone image → Red gradient with person icon
 
 ### 4. **SEO Optimization** 📱
+
 - **Status**: DONE
 - **Added Meta Tags**:
   - `<meta name="description">` - Improved search engine snippet
@@ -55,6 +62,7 @@ Comprehensive refactoring and optimization of the single-page HTML application f
 - **Benefit**: Better visibility in search results and social media
 
 ### 5. **Accessibility Improvements** ♿
+
 - **Status**: DONE
 - **Changes**:
   - Added `aria-label` attributes to all interactive elements
@@ -64,6 +72,7 @@ Comprehensive refactoring and optimization of the single-page HTML application f
 - **Benefit**: Better support for assistive technologies and screen readers
 
 ### 6. **Performance Optimizations** ⚡
+
 - **Status**: DONE
 - **Improvements**:
   - Added `@media (prefers-reduced-motion: reduce)` - Respects user's motion preferences for accessibility
@@ -73,6 +82,7 @@ Comprehensive refactoring and optimization of the single-page HTML application f
 - **Benefit**: Better performance on low-end devices and accessible motion handling
 
 ### 7. **Code Documentation & Comments** 📚
+
 - **Status**: DONE
 - **Added**:
   - Comprehensive JSDoc comments for all functions
@@ -80,6 +90,7 @@ Comprehensive refactoring and optimization of the single-page HTML application f
   - Inline comments explaining complex logic
   - Parameter and return type documentation
 - **Sections**:
+
   ```
   // ============================================
   // TAB SWITCHING LOGIC
@@ -94,9 +105,11 @@ Comprehensive refactoring and optimization of the single-page HTML application f
   // INITIALIZATION
   // ============================================
   ```
+
 - **Benefit**: Better code maintainability and future modifications
 
 ### 8. **Download Button Improvements** 📥
+
 - **Status**: DONE
 - **Changes**:
   - Converted from inline `onclick` to event listener
@@ -109,6 +122,7 @@ Comprehensive refactoring and optimization of the single-page HTML application f
   - Disabled button during download to prevent double-clicks
 
 ### 9. **Copy-to-Clipboard Enhancements** 📋
+
 - **Status**: DONE
 - **Improvements**:
   - Proper async/await implementation
@@ -149,6 +163,7 @@ Comprehensive refactoring and optimization of the single-page HTML application f
 ## 🚀 Deployment Instructions
 
 1. **Push to GitHub**:
+
    ```bash
    git add index.html
    git commit -m "refactor: improve security, accessibility, and performance"
@@ -162,7 +177,7 @@ Comprehensive refactoring and optimization of the single-page HTML application f
    - Save
 
 3. **Access Your Site**:
-   - `https://bronsonacoutts.github.io/naughtynomenclature/`
+   - `https://bronsonacoutts.github.io/nastynomenclature/`
 
 ---
 
