@@ -365,9 +365,14 @@ wb);O(IMG_SEARCH_ATTRIBUTION_MAP,Pd);O(IMG_GEN_REPLACE_MAP,fa.A);X();jf();h.A=0}
     <body class="min-h-screen flex flex-col font-body">
         <!-- Skip to Main Content Link -->
         <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-0 focus:left-0 focus:z-[10000] focus:bg-fuchsia-600 focus:text-white focus:px-4 focus:py-2">Skip to main content</a>
-
         <!-- Content Disclaimer Modal -->
-        <div id="disclaimerModal" class="fixed inset-0 bg-black/95 flex items-center justify-center z-[9999]" role="dialog" aria-modal="true" aria-labelledby="disclaimerTitle">
+        <div
+            id="disclaimerModal"
+            class="fixed inset-0 bg-black/95 flex items-center justify-center z-[9999]"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="disclaimerTitle"
+        >
             <div class="bg-gradient-to-br from-[#2d1b4e] to-[#1a0f2e] border-2 border-fuchsia-500 rounded-2xl shadow-2xl max-w-2xl w-full mx-4 p-8 text-center">
                 <div class="mb-6">
                     <span class="material-symbols-outlined text-6xl text-fuchsia-500 mb-4 inline-block">warning</span>
@@ -476,7 +481,7 @@ wb);O(IMG_SEARCH_ATTRIBUTION_MAP,Pd);O(IMG_GEN_REPLACE_MAP,fa.A);X();jf();h.A=0}
                     <p class="text-gray-400 text-sm italic">
                         Let our handsome experts guide you through the hard rules of syntax. Don't worry, they don't bite... unless you ask.
                     </p>
-                    <a href="#styles" class="inline-block bg-fuchsia-600 hover:bg-fuchsia-700 text-white font-bold py-3 px-8 rounded-full shadow-lg shadow-fuchsia-500/30 transition transform hover:-translate-y-1">
+                    <a href="styles.html" class="inline-block bg-fuchsia-600 hover:bg-fuchsia-700 text-white font-bold py-3 px-8 rounded-full shadow-lg shadow-fuchsia-500/30 transition transform hover:-translate-y-1">
                         Explore the Positions
                     </a>
                 </div>
@@ -495,427 +500,85 @@ wb);O(IMG_SEARCH_ATTRIBUTION_MAP,Pd);O(IMG_GEN_REPLACE_MAP,fa.A);X();jf();h.A=0}
                 </div>
             </div>
         </section>
-        <!-- The Styles Section -->
-        <section id="styles" class="py-16 bg-[#1a0f24]">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 font-brand">
-                    Pick Your
-                    <span class="text-fuchsia-500">Preference</span>
+        <!-- Call to Action - The Styles -->
+        <section class="py-16 bg-gradient-to-b from-[#1a0f24] to-[#150d1c]">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 font-brand">
+                    Ready to explore
+                    <span class="text-fuchsia-500">the styles</span>
+                    ?
                 </h2>
-                <!-- Mobile Dropdown / Desktop Tabs -->
-                <div class="flex flex-wrap justify-center gap-4 mb-10">
-                    <button id="btn-camel" onclick="switchTab('camel')" class="tab-btn bg-gray-800 hover:bg-gray-700 px-6 py-3 rounded-lg font-bold transition border-2 border-transparent tab-active">camelCase</button>
-                    <button id="btn-pascal" onclick="switchTab('pascal')" class="tab-btn bg-gray-800 hover:bg-gray-700 px-6 py-3 rounded-lg font-bold transition border-2 border-transparent">PascalCase</button>
-                    <button id="btn-snake" onclick="switchTab('snake')" class="tab-btn bg-gray-800 hover:bg-gray-700 px-6 py-3 rounded-lg font-bold transition border-2 border-transparent">snake_case</button>
-                    <button id="btn-kebab" onclick="switchTab('kebab')" class="tab-btn bg-gray-800 hover:bg-gray-700 px-6 py-3 rounded-lg font-bold transition border-2 border-transparent">kebab-case</button>
-                    <button id="btn-train" onclick="switchTab('train')" class="tab-btn bg-gray-800 hover:bg-gray-700 px-6 py-3 rounded-lg font-bold transition border-2 border-transparent">Train-Case</button>
-                    <button id="btn-screaming" onclick="switchTab('screaming')" class="tab-btn bg-gray-800 hover:bg-gray-700 px-6 py-3 rounded-lg font-bold transition border-2 border-transparent">SCREAMING</button>
-                </div>
-                <!-- Content Area -->
-                <div class="relative bg-black/40 rounded-2xl p-6 md:p-10 border border-purple-500/20 min-h-[600px]">
-                    <!-- Camel Case Content -->
-                    <div id="content-camel" class="tab-content grid md:grid-cols-2 gap-8 items-center animate-fade-in">
-                        <div class="order-2 md:order-1 space-y-4">
-                            <h3 class="text-3xl font-bold text-white font-brand flex items-center gap-2">
-                                <span class="material-symbols-outlined text-yellow-500">looks_two</span>
-                                camelCase
-                            </h3>
-                            <p class="text-lg text-gray-300">
-                                Start smooth and low, then ride the hump in the middle.
-                            </p>
-                            <div class="bg-gray-900 p-4 rounded border-l-4 border-yellow-500">
-                                <code class="text-yellow-400 text-lg code-snippet">myBigPackage = true;</code>
-                            </div>
-                            <div class="space-y-2">
-                                <h4 class="font-bold text-fuchsia-400 uppercase text-sm">The Technique</h4>
-                                <p class="text-sm text-gray-400">
-                                    The first word is lowercase. Every subsequent word starts with an uppercase letter. No spaces. Just tight, seamless integration.
-                                </p>
-                            </div>
-                            <div class="space-y-2">
-                                <h4 class="font-bold text-fuchsia-400 uppercase text-sm">Where to use it</h4>
-                                <p class="text-sm text-gray-400">
-                                    JavaScript variables, Java methods, and anytime you want to be modern but standard. It’s the missionary position of coding—reliable, standard, and everyone leaves satisfied.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="order-1 md:order-2 flex justify-center">
-                            <img
-                                src="assets/camel_case_model.png"
-                                data-src="/gen?prompt=handsome+muscular+shirtless+man+with+hairy+chest+flexing+bicep+side+view+digital+art+purple+and+yellow+lighting+confident+smirk&aspect=3:4"
-                                alt="camelCase Presenter - muscular man flexing"
-                                class="rounded-lg shadow-2xl max-h-[500px] object-cover border-2 border-yellow-500/50"
-                            >
-                        </div>
-                    </div>
-                    <!-- Pascal Case Content -->
-                    <div id="content-pascal" class="tab-content hidden grid md:grid-cols-2 gap-8 items-center animate-fade-in">
-                        <div class="order-2 md:order-1 space-y-4">
-                            <h3 class="text-3xl font-bold text-white font-brand flex items-center gap-2">
-                                <span class="material-symbols-outlined text-blue-500">stat_3</span>
-                                PascalCase
-                            </h3>
-                            <p class="text-lg text-gray-300">
-                                Start big, stay big. Every single part stands tall, proud, and ready for action.
-                            </p>
-                            <div class="bg-gray-900 p-4 rounded border-l-4 border-blue-500">
-                                <code class="text-blue-400 text-lg code-snippet">HugeObjectFactory</code>
-                            </div>
-                            <div class="space-y-2">
-                                <h4 class="font-bold text-fuchsia-400 uppercase text-sm">The Technique</h4>
-                                <p class="text-sm text-gray-400">
-                                    Capitalize the first letter of EVERY word. It demands attention. It dominates the line. It's the alpha of nomenclature.
-                                </p>
-                            </div>
-                            <div class="space-y-2">
-                                <h4 class="font-bold text-fuchsia-400 uppercase text-sm">Where to use it</h4>
-                                <p class="text-sm text-gray-400">
-                                    Class names, Constructors, and Interfaces. Use this when you're defining the blueprint for something truly massive. Size matters here.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="order-1 md:order-2 flex justify-center">
-                            <img
-                                src="assets/pascal_case_model.png"
-                                data-src="/gen?prompt=handsome+muscular+shirtless+man+with+hairy+chest+standing+tall+hands+on+hips+heroic+pose+digital+art+blue+lighting+looking+up&aspect=3:4"
-                                alt="PascalCase Presenter - man standing heroically"
-                                class="rounded-lg shadow-2xl max-h-[500px] object-cover border-2 border-blue-500/50"
-                                style="aspect-ratio: 3/4;"
-                            >
-                        </div>
-                    </div>
-                    <!-- Snake Case Content -->
-                    <div id="content-snake" class="tab-content hidden grid md:grid-cols-2 gap-8 items-center animate-fade-in">
-                        <div class="order-2 md:order-1 space-y-4">
-                            <h3 class="text-3xl font-bold text-white font-brand flex items-center gap-2">
-                                <span class="material-symbols-outlined text-green-500">gesture</span>
-                                snake_case
-                            </h3>
-                            <p class="text-lg text-gray-300">
-                                Keep it low, keep it long, and let it slither across the floor.
-                            </p>
-                            <div class="bg-gray-900 p-4 rounded border-l-4 border-green-500">
-                                <code class="text-green-400 text-lg code-snippet">long_slithering_python</code>
-                            </div>
-                            <div class="space-y-2">
-                                <h4 class="font-bold text-fuchsia-400 uppercase text-sm">The Technique</h4>
-                                <p class="text-sm text-gray-400">
-                                    All lowercase. Words are separated by an underscore (
-                                    <code>_</code>
-                                    ). It extends the length of your... member... significantly.
-                                </p>
-                            </div>
-                            <div class="space-y-2">
-                                <h4 class="font-bold text-fuchsia-400 uppercase text-sm">Where to use it</h4>
-                                <p class="text-sm text-gray-400">
-                                    Python, Ruby, and Database fields. It's relaxed, readable, and perfect for deep insertions into the database.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="order-1 md:order-2 flex justify-center">
-                            <img
-                                src="assets/snake_case_model.png"
-                                data-src="/gen?prompt=handsome+muscular+shirtless+man+with+hairy+chest+lounging+on+a+couch+relaxed+pose+digital+art+green+lighting+seductive+gaze&aspect=3:4"
-                                alt="snake_case Presenter - man lounging on couch"
-                                class="rounded-lg shadow-2xl max-h-[500px] object-cover border-2 border-green-500/50"
-                                style="aspect-ratio: 3/4;"
-                            >
-                        </div>
-                    </div>
-                    <!-- Kebab Case Content -->
-                    <div id="content-kebab" class="tab-content hidden grid md:grid-cols-2 gap-8 items-center animate-fade-in">
-                        <div class="order-2 md:order-1 space-y-4">
-                            <h3 class="text-3xl font-bold text-white font-brand flex items-center gap-2">
-                                <span class="material-symbols-outlined text-orange-500">remove</span>
-                                kebab-case
-                            </h3>
-                            <p class="text-lg text-gray-300">
-                                Skewered right through the middle. A firm dash to keep the parts from separating.
-                            </p>
-                            <div class="bg-gray-900 p-4 rounded border-l-4 border-orange-500">
-                                <code class="text-orange-400 text-lg code-snippet">stick-it-through-here</code>
-                            </div>
-                            <div class="space-y-2">
-                                <h4 class="font-bold text-fuchsia-400 uppercase text-sm">The Technique</h4>
-                                <p class="text-sm text-gray-400">
-                                    All lowercase. Words separated by a hyphen (
-                                    <code>-</code>
-                                    ). It looks like a long skewer ready for grilling.
-                                </p>
-                            </div>
-                            <div class="space-y-2">
-                                <h4 class="font-bold text-fuchsia-400 uppercase text-sm">Where to use it</h4>
-                                <p class="text-sm text-gray-400">
-                                    URLs and CSS classes. It's great for the web, but keep it out of your backend code—most parsers see the dash as a subtraction, and nobody likes it when you take things away just when it's getting good.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="order-1 md:order-2 flex justify-center">
-                            <img
-                                src="assets/kebab_case_model.png"
-                                data-src="/gen?prompt=handsome+muscular+shirtless+man+with+hairy+chest+holding+a+long+wooden+staff+pose+digital+art+orange+lighting+intense&aspect=3:4"
-                                alt="kebab-case Presenter - man holding staff"
-                                class="rounded-lg shadow-2xl max-h-[500px] object-cover border-2 border-orange-500/50"
-                                style="aspect-ratio: 3/4;"
-                            >
-                        </div>
-                    </div>
-                    <!-- Train Case Content -->
-                    <div id="content-train" class="tab-content hidden grid md:grid-cols-2 gap-8 items-center animate-fade-in">
-                        <div class="order-2 md:order-1 space-y-4">
-                            <h3 class="text-3xl font-bold text-white font-brand flex items-center gap-2">
-                                <span class="material-symbols-outlined text-indigo-500">train</span>
-                                Train-Case
-                            </h3>
-                            <p class="text-lg text-gray-300">
-                                Chugging along with power and purpose. Capitalized and connected, ready to haul a heavy load.
-                            </p>
-                            <div class="bg-gray-900 p-4 rounded border-l-4 border-indigo-500">
-                                <code class="text-indigo-400 text-lg code-snippet">Big-Heavy-Load</code>
-                            </div>
-                            <div class="space-y-2">
-                                <h4 class="font-bold text-fuchsia-400 uppercase text-sm">The Technique</h4>
-                                <p class="text-sm text-gray-400">
-                                    Capitalized Words. Separated by a hyphen (
-                                    <code>-</code>
-                                    ). It's like a series of sturdy cars linked together, moving in rhythm.
-                                </p>
-                            </div>
-                            <div class="space-y-2">
-                                <h4 class="font-bold text-fuchsia-400 uppercase text-sm">Where to use it</h4>
-                                <p class="text-sm text-gray-400">
-                                    HTTP Headers. It's formal, structured, and ensures your payload gets delivered exactly where it needs to go without spilling a drop.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="order-1 md:order-2 flex justify-center">
-                            <img
-                                src="assets/train_case_model.png"
-                                data-src="/gen?prompt=handsome+muscular+shirtless+man+with+hairy+chest+holding+whiskey+glass+leaning+back+neon+purple+lighting+club+atmosphere+digital+art&aspect=16:9"
-                                alt="Train-Case Presenter - man leaning in neon club"
-                                class="rounded-lg shadow-2xl max-h-[500px] object-cover border-2 border-indigo-500/50"
-                                style="aspect-ratio: 16/9;"
-                            >
-                        </div>
-                    </div>
-                    <!-- Screaming Snake Content -->
-                    <div id="content-screaming" class="tab-content hidden grid md:grid-cols-2 gap-8 items-center animate-fade-in">
-                        <div class="order-2 md:order-1 space-y-4">
-                            <h3 class="text-3xl font-bold text-white font-brand flex items-center gap-2">
-                                <span class="material-symbols-outlined text-red-500">warning</span>
-                                SCREAMING_SNAKE
-                            </h3>
-                            <p class="text-lg text-gray-300">
-                                Loud, proud, and rock hard. This one doesn't soften for anybody.
-                            </p>
-                            <div class="bg-gray-900 p-4 rounded border-l-4 border-red-500">
-                                <code class="text-red-400 text-lg code-snippet">HARD_LIMIT_REACHED</code>
-                            </div>
-                            <div class="space-y-2">
-                                <h4 class="font-bold text-fuchsia-400 uppercase text-sm">The Technique</h4>
-                                <p class="text-sm text-gray-400">
-                                    ALL CAPS. Underscores. It's shouting at you. It's intense. It demands total submission. You don't change it; it changes you.
-                                </p>
-                            </div>
-                            <div class="space-y-2">
-                                <h4 class="font-bold text-fuchsia-400 uppercase text-sm">Where to use it</h4>
-                                <p class="text-sm text-gray-400">
-                                    Constants. Values that are forbidden from changing. Once you set it, it stays that way forever.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="order-1 md:order-2 flex justify-center">
-                            <img
-                                src="assets/screaming_case_model.png"
-                                data-src="/gen?prompt=handsome+muscular+shirtless+man+with+hairy+chest+yelling+excitedly+arms+wide+open+digital+art+red+lighting+sweaty+and+intense&aspect=3:4"
-                                alt="SCREAMING_SNAKE_CASE Presenter - man yelling excitedly"
-                                class="rounded-lg shadow-2xl max-h-[500px] object-cover border-2 border-red-500/50"
-                                style="aspect-ratio: 3/4;"
-                            >
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- The Forbidden Zone -->
-        <section id="forbidden" class="py-20 relative overflow-hidden">
-            <div class="absolute inset-0 bg-red-900/10"></div>
-            <div class="container mx-auto px-4 relative z-10">
-                <div class="text-center mb-16">
-                    <span class="material-symbols-outlined text-6xl text-red-500 mb-4 animate-pulse">block</span>
-                    <h2 class="text-4xl md:text-5xl font-bold text-white font-brand">
-                        The
-                        <span class="text-red-500">Forbidden</span>
-                        Zone
-                    </h2>
-                    <p class="text-xl text-gray-400 mt-4 max-w-2xl mx-auto">Some things are just too naughty, even for us. Trying these will break the mood immediately.</p>
-                </div>
-                <div class="grid md:grid-cols-2 gap-12 items-center">
-                    <!-- Visual -->
-                    <div class="flex justify-center">
-                        <img
-                            src="assets/forbidden_stern_look.png"
-                            data-src="/gen?prompt=handsome+muscular+shirtless+man+with+hairy+chest+looking+stern+and+disapproving+arms+crossed+digital+art+red+lighting+dark+shadows&aspect=1:1"
-                            alt="Stern Disapproval - man with arms crossed looking disapproving"
-                            class="rounded-full w-64 h-64 md:w-96 md:h-96 object-cover border-4 border-red-600 shadow-[0_0_30px_rgba(220,38,38,0.5)] grayscale hover:grayscale-0 transition duration-500"
-                        >
-                    </div>
-                    <!-- Explanation -->
-                    <div class="space-y-8">
-                        <div class="bg-black/50 p-6 rounded-xl border border-red-500/30">
-                            <h3 class="text-2xl font-bold text-red-400 flex items-center gap-2 mb-2">
-                                <span class="material-symbols-outlined">space_bar</span>
-                                No Spaces Allowed
-                            </h3>
-                            <p class="text-gray-300">
-                                "You can't have gaps in your package. It ruins the friction."
-                            </p>
-                            <p class="text-sm text-gray-500 mt-2">
-                                A computer reads a space as "Stop! I'm done!" If you write
-                                <code>sexy man</code>
-                                , the computer thinks
-                                <code>sexy</code>
-                                is one thing and
-                                <code>man</code>
-                                is a totally different surprise it wasn't expecting. Keep it tight. Keep it connected.
-                            </p>
-                        </div>
-                        <div class="bg-black/50 p-6 rounded-xl border border-red-500/30">
-                            <h3 class="text-2xl font-bold text-red-400 flex items-center gap-2 mb-2">
-                                <span class="material-symbols-outlined">fiber_manual_record</span>
-                                No Periods
-                            </h3>
-                            <p class="text-gray-300">
-                                "Don't stop the flow until you're truly finished."
-                            </p>
-                            <p class="text-sm text-gray-500 mt-2">
-                                In many languages, a dot means "enter inside me." (e.g.,
-                                <code>User.name</code>
-                                accesses the name *inside* the User). If you use a dot in the name itself, the computer tries to penetrate an object that isn't ready. Always ask for consent (by defining the object first).
-                            </p>
-                        </div>
-                        <div class="bg-black/50 p-6 rounded-xl border border-red-500/30">
-                            <h3 class="text-2xl font-bold text-red-400 flex items-center gap-2 mb-2">
-                                <span class="material-symbols-outlined">horizontal_rule</span>
-                                flatcase
-                            </h3>
-                            <p class="text-gray-300">
-                                "Limp and lifeless."
-                            </p>
-                            <p class="text-sm text-gray-500 mt-2">
-                                <code>alllowercase</code>
-                                with no definition, no humps, no length. Just a sad, shapeless blob of text. Hard to read, hard to love. Don't be a flatcase.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- The Exchange (API Standards) -->
-        <section id="api-standards" class="py-16 bg-[#150d1c] border-t border-purple-900/30">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 font-brand">
-                    The
-                    <span class="text-fuchsia-500">Exchange</span>
-                    Protocol
-                </h2>
-                <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
-                    When two systems want to... interface... they need to agree on how to touch each other. Here are the standards for a safe and pleasurable data exchange.
+                <p class="text-gray-400 mb-8 max-w-2xl mx-auto">
+                    Let our handsome experts guide you through every naming convention. From the gentle curves of camelCase to the solid strength of SCREAMING_SNAKE_CASE.
                 </p>
-                <div class="grid md:grid-cols-3 gap-8">
-                    <!-- JSON Keys -->
-                    <div class="bg-black/40 p-6 rounded-xl border border-purple-500/20 hover:border-fuchsia-500/50 transition group">
-                        <div class="flex items-center gap-3 mb-4">
-                            <span class="material-symbols-outlined text-yellow-500 text-3xl group-hover:scale-110 transition">data_object</span>
-                            <h3 class="text-xl font-bold text-white">JSON Bodies</h3>
+                <a href="styles.html" class="inline-block bg-fuchsia-600 hover:bg-fuchsia-700 text-white font-bold py-3 px-8 rounded-full shadow-lg shadow-fuchsia-500/30 transition transform hover:-translate-y-1">
+                    Explore the Styles
+                </a>
+            </div>
+        </section>
+        <!-- Download License Modal -->
+        <div id="downloadModal" class="hidden fixed inset-0 bg-black/80 flex items-center justify-center z-50">
+            <div class="bg-gradient-to-br from-[#1a0f2e] to-[#2d1b4e] border border-fuchsia-500/50 rounded-2xl shadow-2xl max-w-2xl w-full mx-4 p-8">
+                <h2 class="text-3xl font-bold text-fuchsia-300 mb-6">Download Terms & License</h2>
+                <div class="bg-black/40 rounded-lg p-6 mb-6 max-h-80 overflow-y-auto">
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        This project is licensed under the
+                        <strong>MIT License</strong>
+                        . By downloading and using this source code, you agree to the following terms:
+                    </p>
+                    <div class="space-y-4 text-sm text-gray-400">
+                        <div>
+                            <h3 class="font-bold text-fuchsia-300 mb-2">✓ You are free to:</h3>
+                            <ul class="list-disc list-inside space-y-1">
+                                <li>Use this code for commercial and private purposes</li>
+                                <li>Modify and adapt the code</li>
+                                <li>Distribute copies of the code</li>
+                                <li>Include this code in your own projects</li>
+                            </ul>
                         </div>
-                        <p class="text-gray-400 text-sm mb-4">
-                            The payload. The meat. When sending a JSON body, most modern APIs prefer the gentle curves of
-                            <strong class="text-yellow-400">camelCase</strong>
-                            .
-                        </p>
-                        <div class="bg-black/60 p-3 rounded text-xs font-mono text-gray-300 border-l-2 border-yellow-500">
-                            { "userPreferences": { "likesItRough": true } }
+                        <div>
+                            <h3 class="font-bold text-fuchsia-300 mb-2">⚠ You must:</h3>
+                            <ul class="list-disc list-inside space-y-1">
+                                <li>Include the original license and copyright notice</li>
+                                <li>Provide a copy of the MIT License with your distribution</li>
+                                <li>State significant changes made to the code</li>
+                            </ul>
                         </div>
-                        <p class="text-xs text-gray-500 mt-3 italic">
-                            *Unless you're talking to Python or Ruby backends, then they might want the long snake.
-                        </p>
-                    </div>
-                    <!-- Query Params -->
-                    <div class="bg-black/40 p-6 rounded-xl border border-purple-500/20 hover:border-fuchsia-500/50 transition group">
-                        <div class="flex items-center gap-3 mb-4">
-                            <span class="material-symbols-outlined text-orange-500 text-3xl group-hover:scale-110 transition">link</span>
-                            <h3 class="text-xl font-bold text-white">URL Parameters</h3>
+                        <div>
+                            <h3 class="font-bold text-fuchsia-300 mb-2">✗ The software is provided "AS IS":</h3>
+                            <ul class="list-disc list-inside space-y-1">
+                                <li>Without warranty of any kind</li>
+                                <li>Without liability for any damages</li>
+                                <li>Use at your own risk</li>
+                            </ul>
                         </div>
-                        <p class="text-gray-400 text-sm mb-4">
-                            The address. How you find the spot. URLs are case-insensitive, so keep it lowercase. Use
-                            <strong class="text-orange-400">kebab-case</strong>
-                            or
-                            <strong class="text-green-400">snake_case</strong>
-                            .
-                        </p>
-                        <div class="bg-black/60 p-3 rounded text-xs font-mono text-gray-300 border-l-2 border-orange-500">
-                            /api/users?sort-by=date&include_images=true
-                        </div>
-                        <p class="text-xs text-gray-500 mt-3 italic">
-                            *Never use camelCase here. Some servers convert everything to lowercase, and your hump will get flattened.
-                        </p>
-                    </div>
-                    <!-- Headers -->
-                    <div class="bg-black/40 p-6 rounded-xl border border-purple-500/20 hover:border-fuchsia-500/50 transition group">
-                        <div class="flex items-center gap-3 mb-4">
-                            <span class="material-symbols-outlined text-purple-500 text-3xl group-hover:scale-110 transition">http</span>
-                            <h3 class="text-xl font-bold text-white">HTTP Headers</h3>
-                        </div>
-                        <p class="text-gray-400 text-sm mb-4">
-                            The foreplay. Setting the mood before the request. The standard here is
-                            <strong class="text-purple-400">Train-Case</strong>
-                            (or Kebab-Pascal).
-                        </p>
-                        <div class="bg-black/60 p-3 rounded text-xs font-mono text-gray-300 border-l-2 border-purple-500">
-                            Content-Type: application/json
-                            <br>
-                            X-Auth-Token: 12345
-                        </div>
-                        <p class="text-xs text-gray-500 mt-3 italic">
-                            *Capitalize the first letter of each word. It shows respect.
+                        <p class="text-xs text-gray-500 mt-4 pt-4 border-t border-gray-700">
+                            For the full MIT License text, visit:
+                            <span class="text-fuchsia-400">https://opensource.org/licenses/MIT</span>
                         </p>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- Interactive Tool Section -->
-        <section id="toy" class="py-20 bg-gradient-to-b from-[#120a18] to-[#2d1b36]">
-            <div class="container mx-auto px-4 max-w-4xl">
-                <h2 class="text-3xl md:text-5xl font-bold text-center mb-8 font-brand">
-                    The
-                    <span class="text-fuchsia-500 neon-text">Transmuter</span>
-                    Toy
-                </h2>
-                <p class="text-center text-gray-400 mb-12">
-                    Type in your raw, dirty text below, and watch us massage it into every position imaginable.
-                </p>
-                <div class="bg-gray-900/80 backdrop-blur rounded-2xl p-8 shadow-2xl border border-fuchsia-500/30">
-                    <!-- Input -->
-                    <div class="mb-8">
-                        <label class="block text-fuchsia-400 font-bold mb-2 uppercase tracking-wider text-xs">Insert Raw Text</label>
-                        <input
-                            type="text"
-                            id="rawInput"
-                            placeholder="Enter text here..."
-                            class="w-full bg-black/50 border-b-2 border-gray-600 focus:border-fuchsia-500 outline-none text-2xl text-white py-4 px-2 transition-colors placeholder-gray-700"
-                        >
-                    </div>
-                    <!-- Results Grid -->
-                    <div id="resultsArea" class="grid gap-4">
-                        <!-- Results generated by JS -->
-                        <div class="p-4 rounded bg-black/30 text-center text-gray-500 italic">
-                            Waiting for insertion...
-                        </div>
-                    </div>
+                <div class="flex items-center gap-3 mb-6">
+                    <input type="checkbox" id="acceptTerms" class="w-5 h-5 cursor-pointer rounded border-fuchsia-500 text-fuchsia-600">
+                    <label for="acceptTerms" class="text-gray-300 cursor-pointer">
+                        I understand and accept these terms
+                    </label>
+                </div>
+                <div class="flex gap-4">
+                    <button onclick="closeDownloadModal()" class="flex-1 bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 rounded-lg transition">
+                        Cancel
+                    </button>
+                    <button
+                        onclick="proceedWithDownload()"
+                        id="downloadBtn"
+                        class="flex-1 bg-fuchsia-600 hover:bg-fuchsia-700 disabled:opacity-50 disabled:cursor-not-allowed text-white font-bold py-3 rounded-lg transition"
+                        disabled
+                    >
+                        Download Source
+                    </button>
                 </div>
             </div>
-        </section>
+        </div>
         <!-- Footer -->
         <footer class="bg-black py-8 text-center border-t border-purple-900/50 mt-auto">
             <p class="text-gray-500 text-sm">
@@ -1078,84 +741,5 @@ wb);O(IMG_SEARCH_ATTRIBUTION_MAP,Pd);O(IMG_GEN_REPLACE_MAP,fa.A);X();jf();h.A=0}
             URL.revokeObjectURL(url);
         }
         </script>
-        <!--
-"/gen?prompt=dark+lounge+background+with+purple+neon+lights+and+velvet+textures+abstract&aspect=16:9"
-"/gen?prompt=handsome+muscular+man+with+hairy+chest+shirtless+wearing+stylish+glasses+and+jeans+leaning+against+a+desk+winking+flirtatious+digital+art+purple+lighting+realistic&aspect=3:4"
-"/gen?prompt=handsome+muscular+shirtless+man+with+hairy+chest+flexing+bicep+side+view+digital+art+purple+and+yellow+lighting+confident+smirk&aspect=3:4"
-"/gen?prompt=handsome+muscular+shirtless+man+with+hairy+chest+standing+tall+hands+on+hips+heroic+pose+digital+art+blue+lighting+looking+up&aspect=3:4"
-"/gen?prompt=handsome+muscular+shirtless+man+with+hairy+chest+lounging+on+a+couch+relaxed+pose+digital+art+green+lighting+seductive+gaze&aspect=3:4"
-"/gen?prompt=handsome+muscular+shirtless+man+with+hairy+chest+holding+a+long+wooden+staff+pose+digital+art+orange+lighting+intense&aspect=3:4"
-"/gen?prompt=handsome+muscular+shirtless+man+with+hairy+chest+yelling+excitedly+arms+wide+open+digital+art+red+lighting+sweaty+and+intense&aspect=3:4"
-"/gen?prompt=handsome+muscular+shirtless+man+with+hairy+chest+looking+stern+and+disapproving+arms+crossed+digital+art+red+lighting+dark+shadows&aspect=1:1"
--->
-        <!-- Download License Modal -->
-        <div id="downloadModal" class="hidden fixed inset-0 bg-black/80 flex items-center justify-center z-50">
-            <div class="bg-gradient-to-br from-[#1a0f2e] to-[#2d1b4e] border border-fuchsia-500/50 rounded-2xl shadow-2xl max-w-2xl w-full mx-4 p-8">
-                <h2 class="text-3xl font-bold text-fuchsia-300 mb-6">Download Terms & License</h2>
-                <div class="bg-black/40 rounded-lg p-6 mb-6 max-h-80 overflow-y-auto">
-                    <p class="text-gray-300 mb-4 leading-relaxed">
-                        This project is licensed under the
-                        <strong>MIT License</strong>
-                        . By downloading and using this source code, you agree to the following terms:
-                    </p>
-                    <div class="space-y-4 text-sm text-gray-400">
-                        <div>
-                            <h3 class="font-bold text-fuchsia-300 mb-2">✓ You are free to:</h3>
-                            <ul class="list-disc list-inside space-y-1">
-                                <li>Use this code for commercial and private purposes</li>
-                                <li>Modify and adapt the code</li>
-                                <li>Distribute copies of the code</li>
-                                <li>Include this code in your own projects</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-fuchsia-300 mb-2">⚠ You must:</h3>
-                            <ul class="list-disc list-inside space-y-1">
-                                <li>Include the original license and copyright notice</li>
-                                <li>Provide a copy of the MIT License with your distribution</li>
-                                <li>State significant changes made to the code</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-fuchsia-300 mb-2">✗ The software is provided "AS IS":</h3>
-                            <ul class="list-disc list-inside space-y-1">
-                                <li>Without warranty of any kind</li>
-                                <li>Without liability for any damages</li>
-                                <li>Use at your own risk</li>
-                            </ul>
-                        </div>
-                        <p class="text-xs text-gray-500 mt-4 pt-4 border-t border-gray-700">
-                            For the full MIT License text, visit:
-                            <span class="text-fuchsia-400">https://opensource.org/licenses/MIT</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="flex items-center gap-3 mb-6">
-                    <input type="checkbox" id="acceptTerms" class="w-5 h-5 cursor-pointer rounded border-fuchsia-500 text-fuchsia-600">
-                    <label for="acceptTerms" class="text-gray-300 cursor-pointer">
-                        I understand and accept these terms
-                    </label>
-                </div>
-                <div class="flex gap-4">
-                    <button onclick="closeDownloadModal()" class="flex-1 bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 rounded-lg transition">
-                        Cancel
-                    </button>
-                    <button
-                        onclick="proceedWithDownload()"
-                        id="downloadBtn"
-                        class="flex-1 bg-fuchsia-600 hover:bg-fuchsia-700 disabled:opacity-50 disabled:cursor-not-allowed text-white font-bold py-3 rounded-lg transition"
-                        disabled
-                    >
-                        Download Source
-                    </button>
-                </div>
-            </div>
-        </div>
-        <!-- Footer -->
-        <footer class="bg-black/80 border-t border-purple-900 mt-auto py-6 px-4" role="contentinfo">
-            <div class="container mx-auto text-center text-sm text-gray-400">
-                <p>&copy; 2024 Nasty Nomenclature. Licensed under MIT.</p>
-            </div>
-        </footer>
     </body>
 </html>
