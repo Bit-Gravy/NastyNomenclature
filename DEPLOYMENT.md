@@ -1,4 +1,4 @@
-# Naughty Nomenclature - Deployment Checklist
+# Nasty Nomenclature - Deployment Checklist
 
 ## Pre-Deployment Verification ✓
 

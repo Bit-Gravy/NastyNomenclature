@@ -219,6 +219,30 @@ wb);O(IMG_SEARCH_ATTRIBUTION_MAP,Pd);O(IMG_GEN_REPLACE_MAP,fa.A);X();jf();h.A=0}
         }
         </script>
         <style>
+        /* Accessibility: Screen reader only & skip links */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+        
+        .focus\:not-sr-only:focus {
+            position: static;
+            width: auto;
+            height: auto;
+            padding: inherit;
+            margin: inherit;
+            overflow: visible;
+            clip: auto;
+            white-space: normal;
+        }
+        
         body {
             background-color: #120a18;
             color: #e0d5e6;
@@ -339,17 +363,20 @@ wb);O(IMG_SEARCH_ATTRIBUTION_MAP,Pd);O(IMG_GEN_REPLACE_MAP,fa.A);X();jf();h.A=0}
         </style>
     </head>
     <body class="min-h-screen flex flex-col font-body">
+        <!-- Skip to Main Content Link -->
+        <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-0 focus:left-0 focus:z-[10000] focus:bg-fuchsia-600 focus:text-white focus:px-4 focus:py-2">Skip to main content</a>
+
         <!-- Content Disclaimer Modal -->
-        <div id="disclaimerModal" class="fixed inset-0 bg-black/95 flex items-center justify-center z-[9999]">
+        <div id="disclaimerModal" class="fixed inset-0 bg-black/95 flex items-center justify-center z-[9999]" role="dialog" aria-modal="true" aria-labelledby="disclaimerTitle">
             <div class="bg-gradient-to-br from-[#2d1b4e] to-[#1a0f2e] border-2 border-fuchsia-500 rounded-2xl shadow-2xl max-w-2xl w-full mx-4 p-8 text-center">
                 <div class="mb-6">
                     <span class="material-symbols-outlined text-6xl text-fuchsia-500 mb-4 inline-block">warning</span>
                 </div>
-                <h1 class="text-4xl font-bold text-fuchsia-300 mb-6 font-brand">Content Warning</h1>
+                <h1 class="text-4xl font-bold text-fuchsia-300 mb-6 font-brand" id="disclaimerTitle">Content Warning</h1>
                 <div class="bg-black/50 rounded-lg p-6 mb-6 text-left">
                     <p class="text-gray-300 text-lg leading-relaxed mb-4">
                         Welcome to
-                        <span class="text-fuchsia-400 font-bold">Naughty Nomenclature</span>
+                        <span class="text-fuchsia-400 font-bold">Nasty Nomenclature</span>
                         —a site dedicated to exploring coding naming conventions with adult-oriented humor and imagery.
                     </p>
                     <p class="text-gray-300 text-lg leading-relaxed mb-4">
@@ -377,17 +404,17 @@ wb);O(IMG_SEARCH_ATTRIBUTION_MAP,Pd);O(IMG_GEN_REPLACE_MAP,fa.A);X();jf();h.A=0}
             </div>
         </div>
         <!-- Header -->
-        <header class="bg-black/80 backdrop-blur-md sticky top-0 z-50 border-b border-purple-900">
+        <header class="bg-black/80 backdrop-blur-md sticky top-0 z-50 border-b border-purple-900" role="banner">
             <div class="container mx-auto px-4 py-4 flex flex-wrap justify-between items-center">
                 <div class="flex items-center gap-2">
                     <span class="material-symbols-outlined text-fuchsia-500 text-3xl">terminal</span>
                     <h1 class="text-2xl md:text-3xl font-bold text-white tracking-wider font-brand">
-                        Naughty
+                        Nasty
                         <span class="text-fuchsia-500 neon-text">Nomenclature</span>
                     </h1>
                 </div>
                 <div class="flex items-center gap-6">
-                    <nav class="hidden md:flex gap-6 text-sm font-bold uppercase tracking-widest text-gray-400">
+                    <nav class="hidden md:flex gap-6 text-sm font-bold uppercase tracking-widest text-gray-400" role="navigation" aria-label="Main navigation">
                         <a href="index.html" class="hover:text-fuchsia-400 transition">Home</a>
                         <a href="styles.html" class="hover:text-fuchsia-400 transition">The Styles</a>
                         <a href="forbidden.html" class="hover:text-fuchsia-400 transition">The Forbidden</a>
@@ -396,9 +423,8 @@ wb);O(IMG_SEARCH_ATTRIBUTION_MAP,Pd);O(IMG_GEN_REPLACE_MAP,fa.A);X();jf();h.A=0}
                         <a href="privacy.html" class="hover:text-fuchsia-400 transition">Privacy</a>
                     </nav>
                     <div class="flex items-center gap-3">
-                        <!-- Export Button -->
-                        <button onclick="openDownloadModal()" class="flex items-center gap-2 bg-fuchsia-900/50 hover:bg-fuchsia-600 border border-fuchsia-500 text-fuchsia-100 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-all hover:shadow-[0_0_15px_rgba(217,70,239,0.5)]">
-                            <span class="material-symbols-outlined text-sm">download</span>
+                        <button onclick="openDownloadModal()" class="flex items-center gap-2 bg-fuchsia-900/50 hover:bg-fuchsia-600 border border-fuchsia-500 text-fuchsia-100 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-all hover:shadow-[0_0_15px_rgba(217,70,239,0.5)]" aria-label="Download the site as HTML">
+                            <span class="material-symbols-outlined text-sm" aria-hidden="true">download</span>
                         </button>
                         <!-- GitHub Link -->
                         <a
@@ -406,6 +432,7 @@ wb);O(IMG_SEARCH_ATTRIBUTION_MAP,Pd);O(IMG_GEN_REPLACE_MAP,fa.A);X();jf();h.A=0}
                             target="_blank"
                             rel="noopener noreferrer"
                             class="flex items-center gap-2 bg-fuchsia-900/50 hover:bg-fuchsia-600 border border-fuchsia-500 text-fuchsia-100 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-all hover:shadow-[0_0_15px_rgba(217,70,239,0.5)]"
+                            aria-label="Visit project on GitHub"
                         >
                             <svg
                                 class="w-5 h-5"
@@ -421,7 +448,7 @@ wb);O(IMG_SEARCH_ATTRIBUTION_MAP,Pd);O(IMG_GEN_REPLACE_MAP,fa.A);X();jf();h.A=0}
             </div>
         </header>
         <!-- Hero Section -->
-        <section id="intro" class="relative py-16 md:py-24 overflow-hidden">
+        <section id="main-content" role="main" class="relative py-16 md:py-24 overflow-hidden">
             <div class="absolute inset-0 z-0 opacity-20">
                 <img
                     src="assets/background_lounge.png"
@@ -1124,5 +1151,11 @@ wb);O(IMG_SEARCH_ATTRIBUTION_MAP,Pd);O(IMG_GEN_REPLACE_MAP,fa.A);X();jf();h.A=0}
                 </div>
             </div>
         </div>
+        <!-- Footer -->
+        <footer class="bg-black/80 border-t border-purple-900 mt-auto py-6 px-4" role="contentinfo">
+            <div class="container mx-auto text-center text-sm text-gray-400">
+                <p>&copy; 2024 Nasty Nomenclature. Licensed under MIT.</p>
+            </div>
+        </footer>
     </body>
 </html>

@@ -2,7 +2,7 @@
 
 ## What Was Done
 
-I've successfully implemented **all 7 major improvements** to your Naughty Nomenclature project:
+I've successfully implemented **all 7 major improvements** to your Nasty Nomenclature project:
 
 ### 1. ✅ **Removed Injected Google Closure Code** (~5,800 lines)
    - Deleted bloated development scripts

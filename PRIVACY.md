@@ -4,7 +4,7 @@
 
 ## Introduction
 
-Welcome to **Naughty Nomenclature** ("we," "our," or "us"). We are committed to protecting your privacy. This Privacy Policy explains how we handle your information when you visit our website.
+Welcome to **Nasty Nomenclature** ("we," "our," or "us"). We are committed to protecting your privacy. This Privacy Policy explains how we handle your information when you visit our website.
 
 ## Information We Collect
 

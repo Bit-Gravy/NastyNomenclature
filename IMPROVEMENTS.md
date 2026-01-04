@@ -1,4 +1,4 @@
-# Naughty Nomenclature - Code Improvements Summary
+# Nasty Nomenclature - Code Improvements Summary
 
 ## Overview
 Comprehensive refactoring and optimization of the single-page HTML application for better performance, security, accessibility, and maintainability.
