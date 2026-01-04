@@ -1,4 +1,12 @@
 {
+  "name": "nasty-nomenclature",
+  "version": "1.0.0",
+  "description": "A satirical, adult-oriented educational guide to coding naming conventions",
+  "author": "Bit Gravy",
+  "license": "MIT",
+  "scripts": {
+    "build": "echo 'Static site, no build needed'"
+  },
   "dependencies": {
     "@microsoft/clarity": "^1.0.2"
   }
