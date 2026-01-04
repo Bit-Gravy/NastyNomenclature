@@ -1,4 +1,4 @@
-# Naughty Nomenclature - Deployment Checklist
+# Nasty Nomenclature - Deployment Checklist
 
 ## Pre-Deployment Verification ✓
 
@@ -17,11 +17,11 @@
 
 ## GitHub Pages Setup
 
-### Quick Start (if not already done):
+### Quick Start (if not already done)
 
 ```bash
 # Navigate to your repository
-cd naughtynomenclature
+cd nastynomenclature
 
 # Ensure you're on the main branch
 git checkout main
@@ -36,39 +36,43 @@ git commit -m "refactor: remove injected code, fix security, improve accessibili
 git push origin main
 ```
 
-### Enable GitHub Pages:
+### Enable GitHub Pages
 
-1. Go to: `https://github.com/bronsonacoutts/naughtynomenclature/settings`
+1. Go to: `https://github.com/bronsonacoutts/nastynomenclature/settings`
 2. Navigate to: **Pages** (left sidebar)
 3. Under "Build and deployment":
    - Source: `Deploy from a branch`
    - Branch: `main` / `/ (root)`
 4. Click **Save**
 5. Wait 30 seconds - your site will be live at:
-   - `https://bronsonacoutts.github.io/naughtynomenclature/`
+   - `https://bronsonacoutts.github.io/nastynomenclature/`
 
 ## Testing Checklist
 
-### Functionality:
+### Functionality
+
 - [ ] Tab switching works (click each tab button)
 - [ ] Case converter produces correct output
 - [ ] Copy button copies to clipboard
 - [ ] Download button saves HTML file
 - [ ] Responsive on mobile (check viewport)
 
-### Performance:
+### Performance
+
 - [ ] Page loads quickly
 - [ ] No console errors (F12 → Console)
 - [ ] Images load correctly (gradients display)
 - [ ] No broken links
 
-### Accessibility:
+### Accessibility
+
 - [ ] Can tab through all buttons
 - [ ] Screen reader reads aria-labels
 - [ ] Works without animations (prefers-reduced-motion)
 - [ ] Sufficient color contrast
 
-### SEO:
+### SEO
+
 - [ ] Meta description appears in search results (inspect page source)
 - [ ] Open Graph tags present (for social sharing)
 - [ ] Canonical URL set correctly
@@ -76,7 +80,7 @@ git push origin main
 ## File Structure
 
 ```
-naughtynomenclature/
+nastynomenclature/
 ├── index.html           # Main application (UPDATED)
 ├── IMPROVEMENTS.md      # Detailed change log
 ├── DEPLOYMENT.md        # This file
@@ -87,14 +91,17 @@ naughtynomenclature/
 ## Troubleshooting
 
 ### Issue: Images not showing
+
 - **Cause**: Blob URLs don't work after reload
 - **Solution**: Already fixed! Using CSS gradients now
 
 ### Issue: Copy button doesn't work
+
 - **Cause**: Old browser without Clipboard API
 - **Solution**: Fallback implemented using `document.execCommand('copy')`
 
 ### Issue: GitHub Pages not showing
+
 - **Cause**: Settings not configured or cache
 - **Solution**:
   1. Verify Settings → Pages is enabled
@@ -102,6 +109,7 @@ naughtynomenclature/
   3. Wait up to 1 minute for GitHub to deploy
 
 ### Issue: Download button creates empty file
+
 - **Cause**: Blob creation failed
 - **Solution**: Check browser console for errors
 
@@ -122,23 +130,27 @@ naughtynomenclature/
 
 ## Browser Compatibility
 
-### Fully Supported:
+### Fully Supported
+
 - Chrome 90+
 - Firefox 88+
 - Safari 14+
 - Edge 90+
 
-### With Fallbacks:
+### With Fallbacks
+
 - IE11 (limited, needs transpilation for production)
 
-### CSS Features Used:
+### CSS Features Used
+
 - Flexbox ✓
 - CSS Grid ✓
 - CSS Gradients ✓
 - Backdrop Blur ✓
 - CSS Variables ✓
 
-### JavaScript Features Used:
+### JavaScript Features Used
+
 - Arrow Functions
 - Template Literals
 - Async/Await
@@ -167,10 +179,11 @@ naughtynomenclature/
 **Ready to Deploy!** 🚀
 
 Run these commands in your terminal:
+
 ```bash
 git add -A
 git commit -m "refactor: optimize for production and GitHub Pages"
 git push origin main
 ```
 
-Then visit: `https://bronsonacoutts.github.io/naughtynomenclature/`
+Then visit: `https://bronsonacoutts.github.io/nastynomenclature/`
