@@ -3,11 +3,13 @@
 ## Completed Accessibility Enhancements
 
 ### 1. **Skip Navigation Links**
+
 - Added "Skip to main content" links to all pages
 - Links are hidden but become visible when focused with keyboard navigation
 - Allows screen reader users and keyboard navigators to bypass repetitive navigation
 
 ### 2. **ARIA Landmarks & Semantic HTML**
+
 - Added `role="banner"` to all `<header>` elements
 - Added `role="navigation"` with `aria-label="Main navigation"` to all `<nav>` elements
 - Added `role="main"` to main content sections with `id="main-content"`
@@ -15,20 +17,24 @@
 - Added `role="dialog"` and `aria-modal="true"` to disclaimer modals
 
 ### 3. **Modal Accessibility**
+
 - Added `aria-labelledby` pointing to modal title
 - Added descriptive ARIA labels to all modal buttons
 - Modal properly announces its purpose to screen readers
 
 ### 4. **Navigation Improvements**
+
 - Added `aria-current="page"` to indicate current page in navigation
 - Added `rel="noopener noreferrer"` to external GitHub links for security
 - Added descriptive `aria-label` to GitHub source link buttons
 
 ### 5. **Decorative Icons**
+
 - Added `aria-hidden="true"` to all Material Symbols icons
 - Ensures screen readers skip decorative visual elements
 
 ### 6. **Form Controls (toy.html)**
+
 - Properly associated `<label>` with `<input>` using `for` and `id` attributes
 - Added `aria-label` to input field for additional context
 - Increased focus ring visibility (from 1px to 2px)
@@ -36,10 +42,12 @@
 - Added individual `aria-label` to each conversion button
 
 ### 7. **Live Regions (toy.html)**
+
 - Added `role="status"`, `aria-live="polite"`, and `aria-atomic="true"` to output region
 - Screen readers will announce conversion results automatically
 
 ### 8. **Tab Interface (styles.html)**
+
 - Added `role="tablist"` with `aria-label` to tab container
 - Added `role="tab"` to all tab buttons
 - Added `aria-selected` attribute management
@@ -49,11 +57,13 @@
 - JavaScript now properly updates `aria-selected` states when switching tabs
 
 ### 9. **Focus Indicators**
+
 - Enhanced focus rings on interactive elements
 - Skip link has prominent focus styling with background color
 - All buttons and links have visible focus states
 
 ### 10. **Heading Structure**
+
 - Proper heading hierarchy maintained throughout all pages
 - Modal uses `<h1>` with unique ID for proper identification
 
@@ -62,7 +72,7 @@
 1. **Keyboard Navigation**: Test all interactive elements with Tab, Shift+Tab, Enter, and Space keys
 2. **Screen Reader**: Test with NVDA (Windows), JAWS, or VoiceOver (Mac)
 3. **Color Contrast**: Run a contrast checker on text/background combinations
-4. **Automated Tools**: 
+4. **Automated Tools**:
    - Use axe DevTools browser extension
    - Run Lighthouse accessibility audit in Chrome DevTools
    - Use WAVE browser extension
@@ -77,10 +87,12 @@
 ## WCAG 2.1 Compliance
 
 These changes improve compliance with:
+
 - **WCAG 2.1 Level A**: Basic accessibility requirements
 - **WCAG 2.1 Level AA**: Enhanced accessibility (target level)
 
 Key improvements address:
+
 - 1.3.1 Info and Relationships
 - 2.1.1 Keyboard accessibility
 - 2.4.1 Bypass Blocks (skip links)

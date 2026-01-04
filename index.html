@@ -36,11 +36,51 @@
                     animation: {
                         'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
                         'fade-in': 'fadeIn 0.5s ease-out forwards',
+                        'fade-out': 'fadeOut 0.4s ease-out forwards',
+                        'slide-up': 'slideUp 0.6s ease-out forwards',
+                        'slide-down': 'slideDown 0.6s ease-out forwards',
+                        'scale-in': 'scaleIn 0.5s ease-out forwards',
+                        'glow-pulse': 'glowPulse 2s ease-in-out infinite',
+                        'float': 'float 4s ease-in-out infinite',
+                        'shimmer': 'shimmer 3s ease-in-out infinite',
+                        'fade-in-delay-1': 'fadeIn 0.6s ease-out 0.1s forwards',
+                        'fade-in-delay-2': 'fadeIn 0.6s ease-out 0.2s forwards',
+                        'fade-in-delay-3': 'fadeIn 0.6s ease-out 0.3s forwards',
+                        'fade-in-delay-4': 'fadeIn 0.6s ease-out 0.4s forwards',
                     },
                     keyframes: {
                         fadeIn: {
                             '0%': { opacity: '0', transform: 'translateY(10px)' },
                             '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        fadeOut: {
+                            '0%': { opacity: '1', transform: 'translateY(0)' },
+                            '100%': { opacity: '0', transform: 'translateY(10px)' },
+                        },
+                        slideUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        slideDown: {
+                            '0%': { opacity: '0', transform: 'translateY(-20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        scaleIn: {
+                            '0%': { opacity: '0', transform: 'scale(0.95)' },
+                            '100%': { opacity: '1', transform: 'scale(1)' },
+                        },
+                        glowPulse: {
+                            '0%, 100%': { 'text-shadow': '0 0 10px #d946ef, 0 0 20px #d946ef, 0 0 30px #a21caf' },
+                            '50%': { 'text-shadow': '0 0 20px #d946ef, 0 0 30px #d946ef, 0 0 40px #a21caf' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-8px)' },
+                        },
+                        shimmer: {
+                            '0%': { opacity: '0.5' },
+                            '50%': { opacity: '1' },
+                            '100%': { opacity: '0.5' },
                         }
                     }
                 }
@@ -55,10 +95,18 @@
         .neon-text {
             text-shadow: 0 0 10px #d946ef, 0 0 20px #d946ef, 0 0 30px #a21caf;
         }
+        /* Page transition animation */
+        html {
+            scroll-behavior: smooth;
+        }
+        main {
+            animation: fadeIn 0.6s ease-out forwards;
+        }
         /* Custom scrollbar */
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #1f1229; }
         ::-webkit-scrollbar-thumb { background: #d946ef; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #a21caf; }
         </style>
     </head>
     <body class="min-h-screen flex flex-col font-body" data-page="intro">
@@ -67,12 +115,12 @@
         <!-- Content Disclaimer Modal -->
         <div
             id="disclaimerModal"
-            class="fixed inset-0 bg-black/95 flex items-center justify-center z-[9999]"
+            class="fixed inset-0 bg-black/95 flex items-center justify-center z-[9999] backdrop-blur-sm"
             role="dialog"
             aria-modal="true"
             aria-labelledby="disclaimerTitle"
         >
-            <div class="bg-gradient-to-br from-[#2d1b4e] to-[#1a0f2e] border-2 border-fuchsia-500 rounded-2xl shadow-2xl max-w-2xl w-full mx-4 p-8 text-center">
+            <div class="bg-gradient-to-br from-[#2d1b4e] to-[#1a0f2e] border-2 border-fuchsia-500 rounded-2xl shadow-2xl max-w-2xl w-full mx-4 p-8 text-center animate-scale-in">
                 <div class="mb-6">
                     <span class="material-symbols-outlined text-6xl text-fuchsia-500 mb-4 inline-block" aria-hidden="true">warning</span>
                 </div>
