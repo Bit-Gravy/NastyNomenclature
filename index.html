@@ -1,0 +1,935 @@
+<html lang="en" data-clarity-id="uw088imuj9">
+    <head>
+        <script>
+        (function() {
+            const clarityId = document.documentElement.dataset.clarityId || "uw088imuj9";
+            (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", clarityId);
+        })();
+        </script>
+        <title>Naughty Nomenclature</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&amp;family=Lato:wght@400;700&amp;display=swap" rel="stylesheet">
+        <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#120a18',
+                            purple: '#1f1229',
+                            accent: '#d946ef',
+                            accentDark: '#a21caf'
+                        }
+                    },
+                    fontFamily: {
+                        brand: ['Cinzel', 'serif'],
+                        body: ['Lato', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'fade-in': 'fadeIn 0.5s ease-out forwards',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(10px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+        </script>
+        <style>
+        body {
+            background-color: #120a18;
+            color: #e0d5e6;
+        }
+        .neon-text {
+            text-shadow: 0 0 10px #d946ef, 0 0 20px #d946ef, 0 0 30px #a21caf;
+        }
+        .tab-active {
+            border-bottom: 2px solid #d946ef;
+            color: #d946ef;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #1f1229; }
+        ::-webkit-scrollbar-thumb { background: #d946ef; border-radius: 4px; }
+        .code-snippet { font-family: 'Courier New', Courier, monospace; }
+        </style>
+        <style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.container{width:100%}@media (min-width: 640px){.container{max-width:640px}}@media (min-width: 768px){.container{max-width:768px}}@media (min-width: 1024px){.container{max-width:1024px}}@media (min-width: 1280px){.container{max-width:1280px}}@media (min-width: 1536px){.container{max-width:1536px}}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.bottom-4{bottom:1rem}.left-0{left:0px}.right-0{right:0px}.top-0{top:0px}.z-0{z-index:0}.z-10{z-index:10}.z-20{z-index:20}.z-50{z-index:50}.order-1{order:1}.order-2{order:2}.mx-auto{margin-left:auto;margin-right:auto}.mb-10{margin-bottom:2.5rem}.mb-12{margin-bottom:3rem}.mb-16{margin-bottom:4rem}.mb-2{margin-bottom:0.5rem}.mb-4{margin-bottom:1rem}.mb-8{margin-bottom:2rem}.mt-2{margin-top:0.5rem}.mt-4{margin-top:1rem}.mt-auto{margin-top:auto}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-64{height:16rem}.h-full{height:100%}.max-h-\[500px\]{max-height:500px}.min-h-\[600px\]{min-height:600px}.min-h-screen{min-height:100vh}.w-64{width:16rem}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-4xl{max-width:56rem}.max-w-sm{max-width:24rem}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes fadeIn{0%{opacity:0;transform:translateY(10px)}100%{opacity:1;transform:translateY(0)}}.animate-fade-in{animation:fadeIn 0.5s ease-out forwards}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-12{gap:3rem}.gap-2{gap:0.5rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.space-y-8 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(2rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(2rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-2{border-width:2px}.border-4{border-width:4px}.border-b{border-bottom-width:1px}.border-b-2{border-bottom-width:2px}.border-l-4{border-left-width:4px}.border-t{border-top-width:1px}.border-blue-500{--tw-border-opacity:1;border-color:rgb(59 130 246 / var(--tw-border-opacity, 1))}.border-blue-500\/50{border-color:rgb(59 130 246 / 0.5)}.border-fuchsia-500{--tw-border-opacity:1;border-color:rgb(217 70 239 / var(--tw-border-opacity, 1))}.border-fuchsia-500\/30{border-color:rgb(217 70 239 / 0.3)}.border-gray-600{--tw-border-opacity:1;border-color:rgb(75 85 99 / var(--tw-border-opacity, 1))}.border-green-500{--tw-border-opacity:1;border-color:rgb(34 197 94 / var(--tw-border-opacity, 1))}.border-green-500\/50{border-color:rgb(34 197 94 / 0.5)}.border-orange-500{--tw-border-opacity:1;border-color:rgb(249 115 22 / var(--tw-border-opacity, 1))}.border-orange-500\/50{border-color:rgb(249 115 22 / 0.5)}.border-purple-500\/20{border-color:rgb(168 85 247 / 0.2)}.border-purple-900{--tw-border-opacity:1;border-color:rgb(88 28 135 / var(--tw-border-opacity, 1))}.border-purple-900\/50{border-color:rgb(88 28 135 / 0.5)}.border-red-500{--tw-border-opacity:1;border-color:rgb(239 68 68 / var(--tw-border-opacity, 1))}.border-red-500\/30{border-color:rgb(239 68 68 / 0.3)}.border-red-500\/50{border-color:rgb(239 68 68 / 0.5)}.border-red-600{--tw-border-opacity:1;border-color:rgb(220 38 38 / var(--tw-border-opacity, 1))}.border-transparent{border-color:transparent}.border-yellow-500{--tw-border-opacity:1;border-color:rgb(234 179 8 / var(--tw-border-opacity, 1))}.border-yellow-500\/50{border-color:rgb(234 179 8 / 0.5)}.bg-\[\#1a0f24\]{--tw-bg-opacity:1;background-color:rgb(26 15 36 / var(--tw-bg-opacity, 1))}.bg-black{--tw-bg-opacity:1;background-color:rgb(0 0 0 / var(--tw-bg-opacity, 1))}.bg-black\/30{background-color:rgb(0 0 0 / 0.3)}.bg-black\/40{background-color:rgb(0 0 0 / 0.4)}.bg-black\/50{background-color:rgb(0 0 0 / 0.5)}.bg-black\/80{background-color:rgb(0 0 0 / 0.8)}.bg-fuchsia-600{--tw-bg-opacity:1;background-color:rgb(192 38 211 / var(--tw-bg-opacity, 1))}.bg-fuchsia-900\/50{background-color:rgb(112 26 117 / 0.5)}.bg-gray-800{--tw-bg-opacity:1;background-color:rgb(31 41 55 / var(--tw-bg-opacity, 1))}.bg-gray-900{--tw-bg-opacity:1;background-color:rgb(17 24 39 / var(--tw-bg-opacity, 1))}.bg-gray-900\/80{background-color:rgb(17 24 39 / 0.8)}.bg-red-900\/10{background-color:rgb(127 29 29 / 0.1)}.bg-gradient-to-b{background-image:linear-gradient(to bottom, var(--tw-gradient-stops))}.bg-gradient-to-t{background-image:linear-gradient(to top, var(--tw-gradient-stops))}.from-\[\#120a18\]{--tw-gradient-from:#120a18 var(--tw-gradient-from-position);--tw-gradient-to:rgb(18 10 24 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.to-\[\#2d1b36\]{--tw-gradient-to:#2d1b36 var(--tw-gradient-to-position)}.to-transparent{--tw-gradient-to:transparent var(--tw-gradient-to-position)}.object-cover{object-fit:cover}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-8{padding-top:2rem;padding-bottom:2rem}.text-center{text-align:center}.font-body{font-family:Lato, sans-serif}.font-brand{font-family:Cinzel, serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-6xl{font-size:3.75rem;line-height:1}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-blue-400{--tw-text-opacity:1;color:rgb(96 165 250 / var(--tw-text-opacity, 1))}.text-blue-500{--tw-text-opacity:1;color:rgb(59 130 246 / var(--tw-text-opacity, 1))}.text-fuchsia-100{--tw-text-opacity:1;color:rgb(250 232 255 / var(--tw-text-opacity, 1))}.text-fuchsia-200{--tw-text-opacity:1;color:rgb(245 208 254 / var(--tw-text-opacity, 1))}.text-fuchsia-400{--tw-text-opacity:1;color:rgb(232 121 249 / var(--tw-text-opacity, 1))}.text-fuchsia-500{--tw-text-opacity:1;color:rgb(217 70 239 / var(--tw-text-opacity, 1))}.text-gray-300{--tw-text-opacity:1;color:rgb(209 213 219 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.text-green-400{--tw-text-opacity:1;color:rgb(74 222 128 / var(--tw-text-opacity, 1))}.text-green-500{--tw-text-opacity:1;color:rgb(34 197 94 / var(--tw-text-opacity, 1))}.text-orange-400{--tw-text-opacity:1;color:rgb(251 146 60 / var(--tw-text-opacity, 1))}.text-orange-500{--tw-text-opacity:1;color:rgb(249 115 22 / var(--tw-text-opacity, 1))}.text-red-400{--tw-text-opacity:1;color:rgb(248 113 113 / var(--tw-text-opacity, 1))}.text-red-500{--tw-text-opacity:1;color:rgb(239 68 68 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-yellow-400{--tw-text-opacity:1;color:rgb(250 204 21 / var(--tw-text-opacity, 1))}.text-yellow-500{--tw-text-opacity:1;color:rgb(234 179 8 / var(--tw-text-opacity, 1))}.placeholder-gray-700::placeholder{--tw-placeholder-opacity:1;color:rgb(55 65 81 / var(--tw-placeholder-opacity, 1))}.opacity-20{opacity:0.2}.opacity-50{opacity:0.5}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-\[0_0_30px_rgba\(220\2c 38\2c 38\2c 0\.5\)\]{--tw-shadow:0 0 30px rgba(220,38,38,0.5);--tw-shadow-colored:0 0 30px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-fuchsia-500\/30{--tw-shadow-color:rgb(217 70 239 / 0.3);--tw-shadow:var(--tw-shadow-colored)}.outline-none{outline:2px solid transparent;outline-offset:2px}.grayscale{--tw-grayscale:grayscale(100%);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur{--tw-backdrop-blur:blur(8px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-500{transition-duration:500ms}.hover\:-translate-y-1:hover{--tw-translate-y:-0.25rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:bg-fuchsia-600:hover{--tw-bg-opacity:1;background-color:rgb(192 38 211 / var(--tw-bg-opacity, 1))}.hover\:bg-fuchsia-700:hover{--tw-bg-opacity:1;background-color:rgb(162 28 175 / var(--tw-bg-opacity, 1))}.hover\:bg-gray-700:hover{--tw-bg-opacity:1;background-color:rgb(55 65 81 / var(--tw-bg-opacity, 1))}.hover\:text-fuchsia-400:hover{--tw-text-opacity:1;color:rgb(232 121 249 / var(--tw-text-opacity, 1))}.hover\:shadow-\[0_0_15px_rgba\(217\2c 70\2c 239\2c 0\.5\)\]:hover{--tw-shadow:0 0 15px rgba(217,70,239,0.5);--tw-shadow-colored:0 0 15px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.hover\:grayscale-0:hover{--tw-grayscale:grayscale(0);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.focus\:border-fuchsia-500:focus{--tw-border-opacity:1;border-color:rgb(217 70 239 / var(--tw-border-opacity, 1))}@media (min-width: 640px){.sm\:inline{display:inline}}@media (min-width: 768px){.md\:order-1{order:1}.md\:order-2{order:2}.md\:flex{display:flex}.md\:h-96{height:24rem}.md\:w-96{width:24rem}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:p-10{padding:2.5rem}.md\:py-24{padding-top:6rem;padding-bottom:6rem}.md\:text-3xl{font-size:1.875rem;line-height:2.25rem}.md\:text-4xl{font-size:2.25rem;line-height:2.5rem}.md\:text-5xl{font-size:3rem;line-height:1}.md\:text-6xl{font-size:3.75rem;line-height:1}}</style>
+        <link type="text/css" href="https://fonts.googleapis.com/css2?family=Google+Symbols:opsz,wght,FILL,GRAD,ROND@24,400,0,0,50&amp;icon_names=link" rel="stylesheet">
+        <style id="dyn-img-link-styles-di-script">
+      .dyn-img-link-wrapper-di-script {
+        anchor-scope: all;
+        display: contents;
+        position: relative;
+        z-index: 1;
+      }
+
+      .dyn-img-link-wrapper-di-script img {
+        anchor-name: --photo;
+        display: block;
+        max-width: 100%;
+      }
+
+      .dyn-img-link-di-script {
+        z-index: 999999;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 9999px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+        color: white;
+        height: clamp(13px, calc(max(anchor-size(width), anchor-size(height)) * 0.3), 21px);
+        width: clamp(13px, calc(max(anchor-size(width), anchor-size(height)) * 0.3), 21px);
+        padding: 4px;
+        position: absolute;
+
+        bottom: anchor(bottom);
+        left: anchor(left);
+        margin-left: 10px;
+        margin-bottom: 10px;
+
+        transition: background-color 0.2s ease-in-out;
+      }
+
+      .dyn-img-link-di-script:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      .dyn-img-link-di-script span {
+        font-size: 14px;
+        vertical-align: top;
+      }
+
+      .dyn-img-attribution-button-di-script {
+        z-index: 999999;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 9999px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+        color: white;
+        width: clamp(13px, calc(max(anchor-size(width), anchor-size(height)) * 0.3), 21px);
+        height: clamp(13px, calc(max(anchor-size(width), anchor-size(height)) * 0.3), 21px);
+        padding: 4px;
+
+        position: absolute;
+        position-anchor: --photo;
+        top: anchor(top);
+        right: anchor(right);
+        margin-top: 10px;
+        margin-right: 10px;
+
+        transition: background-color 0.2s ease-in-out;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .dyn-img-attribution-button-di-script:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      .dyn-img-attribution-button-di-script span {
+        font-size: 14px;
+        vertical-align: top;
+      }
+
+      .dyn-img-inline-attribution-di-script {
+        z-index: 999999;
+        font-size: 12px;
+        padding: 4px;
+        display: none;
+
+        position: absolute;
+        position-anchor: --photo;
+        bottom: anchor(bottom);
+        right: anchor(right);
+        margin-bottom: 8px;
+        margin-right: 8px;
+
+        max-width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: right;
+
+        white-space: nowrap;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 9999px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+        color: white;
+      }
+        </style>
+    </head>
+    <body class="min-h-screen flex flex-col font-body">
+        <!-- Content Disclaimer Modal -->
+        <div id="disclaimerModal" class="fixed inset-0 bg-black/95 flex items-center justify-center z-[9999]">
+            <div class="bg-gradient-to-br from-[#2d1b4e] to-[#1a0f2e] border-2 border-fuchsia-500 rounded-2xl shadow-2xl max-w-2xl w-full mx-4 p-8 text-center">
+                <div class="mb-6">
+                    <span class="material-symbols-outlined text-6xl text-fuchsia-500 mb-4 inline-block">warning</span>
+                </div>
+                <h1 class="text-4xl font-bold text-fuchsia-300 mb-6 font-brand">Content Warning</h1>
+                <div class="bg-black/50 rounded-lg p-6 mb-6 text-left">
+                    <p class="text-gray-300 text-lg leading-relaxed mb-4">
+                        Welcome to
+                        <span class="text-fuchsia-400 font-bold">Naughty Nomenclature</span>
+                        —a site dedicated to exploring coding naming conventions with adult-oriented humor and imagery.
+                    </p>
+                    <p class="text-gray-300 text-lg leading-relaxed mb-4">
+                        This site contains:
+                    </p>
+                    <ul class="text-gray-300 text-lg space-y-2 ml-4 mb-4">
+                        <li>🔞 Adult-oriented content and imagery</li>
+                        <li>😏 Sexual humor and innuendo</li>
+                        <li>💪 Images of partially nude male figures</li>
+                        <li>🔥 Mature themes and suggestive language</li>
+                    </ul>
+                    <p class="text-gray-300 text-lg leading-relaxed">
+                        <strong>This site is intended for adults only.</strong>
+                        If you are offended by mature content or adult humor, we recommend you leave now.
+                    </p>
+                </div>
+                <div class="flex gap-4">
+                    <button onclick="rejectDisclaimer()" class="flex-1 bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-lg transition text-lg">
+                        ← Don't Enter
+                    </button>
+                    <button onclick="acceptDisclaimer()" class="flex-1 bg-fuchsia-600 hover:bg-fuchsia-700 text-white font-bold py-3 px-6 rounded-lg transition text-lg">
+                        Enter →
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Header -->
+        <header class="bg-black/80 backdrop-blur-md sticky top-0 z-50 border-b border-purple-900">
+            <div class="container mx-auto px-4 py-4 flex flex-wrap justify-between items-center">
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-fuchsia-500 text-3xl">terminal</span>
+                    <h1 class="text-2xl md:text-3xl font-bold text-white tracking-wider font-brand">
+                        Naughty
+                        <span class="text-fuchsia-500 neon-text">Nomenclature</span>
+                    </h1>
+                </div>
+                <div class="flex items-center gap-6">
+                    <nav class="hidden md:flex gap-6 text-sm font-bold uppercase tracking-widest text-gray-400">
+                        <a href="#intro" class="hover:text-fuchsia-400 transition">The Intro</a>
+                        <a href="#styles" class="hover:text-fuchsia-400 transition">The Styles</a>
+                        <a href="#forbidden" class="hover:text-fuchsia-400 transition">The Forbidden</a>
+                        <a href="#api-standards" class="hover:text-fuchsia-400 transition">Exchanges</a>
+                        <a href="#toy" class="hover:text-fuchsia-400 transition">The Toy</a>
+                    </nav>
+                    <!-- Export Button -->
+                    <button onclick="openDownloadModal()" class="flex items-center gap-2 bg-fuchsia-900/50 hover:bg-fuchsia-600 border border-fuchsia-500 text-fuchsia-100 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-all hover:shadow-[0_0_15px_rgba(217,70,239,0.5)]">
+                        <span class="material-symbols-outlined text-sm">download</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <!-- Hero Section -->
+        <section id="intro" class="relative py-16 md:py-24 overflow-hidden">
+            <div class="absolute inset-0 z-0 opacity-20">
+                <img
+                    src="assets/background_lounge.png"
+                    data-src="/gen?prompt=dark+lounge+background+with+purple+neon+lights+and+velvet+textures+abstract&aspect=16:9"
+                    alt="Background - dark lounge with purple neon lights"
+                    class="w-full h-full object-cover"
+                >
+            </div>
+            <div class="container mx-auto px-4 relative z-10 grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h2 class="text-4xl md:text-6xl font-bold leading-tight font-brand">
+                        Size, Shape, and
+                        <br>
+                        <span class="text-fuchsia-500">Capitalization</span>
+                        Matter.
+                    </h2>
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        Welcome, darling. In the world of programming, how you handle your members—variables, functions, classes—is everything. 
+                    You can't just stick it in anywhere and expect it to work. You need discipline. You need style. You need to know when to be
+                        <span class="italic text-fuchsia-400">bold</span>
+                        , when to stay
+                        <span class="italic text-fuchsia-400">low</span>
+                        , and when to use protection.
+                    </p>
+                    <p class="text-gray-400 text-sm italic">
+                        Let our handsome experts guide you through the hard rules of syntax. Don't worry, they don't bite... unless you ask.
+                    </p>
+                    <a href="#styles" class="inline-block bg-fuchsia-600 hover:bg-fuchsia-700 text-white font-bold py-3 px-8 rounded-full shadow-lg shadow-fuchsia-500/30 transition transform hover:-translate-y-1">
+                        Explore the Positions
+                    </a>
+                </div>
+                <div class="relative flex justify-center">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#120a18] to-transparent z-10"></div>
+                    <!-- Host Image -->
+                    <img
+                        src="assets/host_handsome_man.png"
+                        data-src="/gen?prompt=handsome+muscular+man+with+hairy+chest+shirtless+wearing+stylish+glasses+and+jeans+leaning+against+a+desk+winking+flirtatious+digital+art+purple+lighting+realistic&aspect=3:4"
+                        alt="Your Host - handsome muscular man"
+                        class="rounded-xl shadow-2xl border border-fuchsia-500/30 w-full max-w-sm object-cover relative z-0"
+                    >
+                    <div class="absolute bottom-4 left-0 right-0 text-center z-20">
+                        <p class="text-fuchsia-200 font-bold font-brand text-xl">The Host</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- The Styles Section -->
+        <section id="styles" class="py-16 bg-[#1a0f24]">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 font-brand">
+                    Pick Your
+                    <span class="text-fuchsia-500">Preference</span>
+                </h2>
+                <!-- Mobile Dropdown / Desktop Tabs -->
+                <div class="flex flex-wrap justify-center gap-4 mb-10">
+                    <button id="btn-camel" onclick="switchTab('camel')" class="tab-btn bg-gray-800 hover:bg-gray-700 px-6 py-3 rounded-lg font-bold transition border-2 border-transparent tab-active">camelCase</button>
+                    <button id="btn-pascal" onclick="switchTab('pascal')" class="tab-btn bg-gray-800 hover:bg-gray-700 px-6 py-3 rounded-lg font-bold transition border-2 border-transparent">PascalCase</button>
+                    <button id="btn-snake" onclick="switchTab('snake')" class="tab-btn bg-gray-800 hover:bg-gray-700 px-6 py-3 rounded-lg font-bold transition border-2 border-transparent">snake_case</button>
+                    <button id="btn-kebab" onclick="switchTab('kebab')" class="tab-btn bg-gray-800 hover:bg-gray-700 px-6 py-3 rounded-lg font-bold transition border-2 border-transparent">kebab-case</button>
+                    <button id="btn-train" onclick="switchTab('train')" class="tab-btn bg-gray-800 hover:bg-gray-700 px-6 py-3 rounded-lg font-bold transition border-2 border-transparent">Train-Case</button>
+                    <button id="btn-screaming" onclick="switchTab('screaming')" class="tab-btn bg-gray-800 hover:bg-gray-700 px-6 py-3 rounded-lg font-bold transition border-2 border-transparent">SCREAMING</button>
+                </div>
+                <!-- Content Area -->
+                <div class="relative bg-black/40 rounded-2xl p-6 md:p-10 border border-purple-500/20 min-h-[600px]">
+                    <!-- Camel Case Content -->
+                    <div id="content-camel" class="tab-content grid md:grid-cols-2 gap-8 items-center animate-fade-in">
+                        <div class="order-2 md:order-1 space-y-4">
+                            <h3 class="text-3xl font-bold text-white font-brand flex items-center gap-2">
+                                <span class="material-symbols-outlined text-yellow-500">looks_two</span>
+                                camelCase
+                            </h3>
+                            <p class="text-lg text-gray-300">
+                                Start smooth and low, then ride the hump in the middle.
+                            </p>
+                            <div class="bg-gray-900 p-4 rounded border-l-4 border-yellow-500">
+                                <code class="text-yellow-400 text-lg code-snippet">myBigPackage = true;</code>
+                            </div>
+                            <div class="space-y-2">
+                                <h4 class="font-bold text-fuchsia-400 uppercase text-sm">The Technique</h4>
+                                <p class="text-sm text-gray-400">
+                                    The first word is lowercase. Every subsequent word starts with an uppercase letter. No spaces. Just tight, seamless integration.
+                                </p>
+                            </div>
+                            <div class="space-y-2">
+                                <h4 class="font-bold text-fuchsia-400 uppercase text-sm">Where to use it</h4>
+                                <p class="text-sm text-gray-400">
+                                    JavaScript variables, Java methods, and anytime you want to be modern but standard. It’s the missionary position of coding—reliable, standard, and everyone leaves satisfied.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="order-1 md:order-2 flex justify-center">
+                            <img
+                                src="assets/camel_case_model.png"
+                                data-src="/gen?prompt=handsome+muscular+shirtless+man+with+hairy+chest+flexing+bicep+side+view+digital+art+purple+and+yellow+lighting+confident+smirk&aspect=3:4"
+                                alt="camelCase Presenter - muscular man flexing"
+                                class="rounded-lg shadow-2xl max-h-[500px] object-cover border-2 border-yellow-500/50"
+                            >
+                        </div>
+                    </div>
+                    <!-- Pascal Case Content -->
+                    <div id="content-pascal" class="tab-content hidden grid md:grid-cols-2 gap-8 items-center animate-fade-in">
+                        <div class="order-2 md:order-1 space-y-4">
+                            <h3 class="text-3xl font-bold text-white font-brand flex items-center gap-2">
+                                <span class="material-symbols-outlined text-blue-500">stat_3</span>
+                                PascalCase
+                            </h3>
+                            <p class="text-lg text-gray-300">
+                                Start big, stay big. Every single part stands tall, proud, and ready for action.
+                            </p>
+                            <div class="bg-gray-900 p-4 rounded border-l-4 border-blue-500">
+                                <code class="text-blue-400 text-lg code-snippet">HugeObjectFactory</code>
+                            </div>
+                            <div class="space-y-2">
+                                <h4 class="font-bold text-fuchsia-400 uppercase text-sm">The Technique</h4>
+                                <p class="text-sm text-gray-400">
+                                    Capitalize the first letter of EVERY word. It demands attention. It dominates the line. It's the alpha of nomenclature.
+                                </p>
+                            </div>
+                            <div class="space-y-2">
+                                <h4 class="font-bold text-fuchsia-400 uppercase text-sm">Where to use it</h4>
+                                <p class="text-sm text-gray-400">
+                                    Class names, Constructors, and Interfaces. Use this when you're defining the blueprint for something truly massive. Size matters here.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="order-1 md:order-2 flex justify-center">
+                            <img
+                                src="assets/pascal_case_model.png"
+                                data-src="/gen?prompt=handsome+muscular+shirtless+man+with+hairy+chest+standing+tall+hands+on+hips+heroic+pose+digital+art+blue+lighting+looking+up&aspect=3:4"
+                                alt="PascalCase Presenter - man standing heroically"
+                                class="rounded-lg shadow-2xl max-h-[500px] object-cover border-2 border-blue-500/50"
+                                style="aspect-ratio: 3/4;"
+                            >
+                        </div>
+                    </div>
+                    <!-- Snake Case Content -->
+                    <div id="content-snake" class="tab-content hidden grid md:grid-cols-2 gap-8 items-center animate-fade-in">
+                        <div class="order-2 md:order-1 space-y-4">
+                            <h3 class="text-3xl font-bold text-white font-brand flex items-center gap-2">
+                                <span class="material-symbols-outlined text-green-500">gesture</span>
+                                snake_case
+                            </h3>
+                            <p class="text-lg text-gray-300">
+                                Keep it low, keep it long, and let it slither across the floor.
+                            </p>
+                            <div class="bg-gray-900 p-4 rounded border-l-4 border-green-500">
+                                <code class="text-green-400 text-lg code-snippet">long_slithering_python</code>
+                            </div>
+                            <div class="space-y-2">
+                                <h4 class="font-bold text-fuchsia-400 uppercase text-sm">The Technique</h4>
+                                <p class="text-sm text-gray-400">
+                                    All lowercase. Words are separated by an underscore (
+                                    <code>_</code>
+                                    ). It extends the length of your... member... significantly.
+                                </p>
+                            </div>
+                            <div class="space-y-2">
+                                <h4 class="font-bold text-fuchsia-400 uppercase text-sm">Where to use it</h4>
+                                <p class="text-sm text-gray-400">
+                                    Python, Ruby, and Database fields. It's relaxed, readable, and perfect for deep insertions into the database.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="order-1 md:order-2 flex justify-center">
+                            <img
+                                src="assets/snake_case_model.png"
+                                data-src="/gen?prompt=handsome+muscular+shirtless+man+with+hairy+chest+lounging+on+a+couch+relaxed+pose+digital+art+green+lighting+seductive+gaze&aspect=3:4"
+                                alt="snake_case Presenter - man lounging on couch"
+                                class="rounded-lg shadow-2xl max-h-[500px] object-cover border-2 border-green-500/50"
+                                style="aspect-ratio: 3/4;"
+                            >
+                        </div>
+                    </div>
+                    <!-- Kebab Case Content -->
+                    <div id="content-kebab" class="tab-content hidden grid md:grid-cols-2 gap-8 items-center animate-fade-in">
+                        <div class="order-2 md:order-1 space-y-4">
+                            <h3 class="text-3xl font-bold text-white font-brand flex items-center gap-2">
+                                <span class="material-symbols-outlined text-orange-500">remove</span>
+                                kebab-case
+                            </h3>
+                            <p class="text-lg text-gray-300">
+                                Skewered right through the middle. A firm dash to keep the parts from separating.
+                            </p>
+                            <div class="bg-gray-900 p-4 rounded border-l-4 border-orange-500">
+                                <code class="text-orange-400 text-lg code-snippet">stick-it-through-here</code>
+                            </div>
+                            <div class="space-y-2">
+                                <h4 class="font-bold text-fuchsia-400 uppercase text-sm">The Technique</h4>
+                                <p class="text-sm text-gray-400">
+                                    All lowercase. Words separated by a hyphen (
+                                    <code>-</code>
+                                    ). It looks like a long skewer ready for grilling.
+                                </p>
+                            </div>
+                            <div class="space-y-2">
+                                <h4 class="font-bold text-fuchsia-400 uppercase text-sm">Where to use it</h4>
+                                <p class="text-sm text-gray-400">
+                                    URLs and CSS classes. It's great for the web, but keep it out of your backend code—most parsers see the dash as a subtraction, and nobody likes it when you take things away just when it's getting good.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="order-1 md:order-2 flex justify-center">
+                            <img
+                                src="assets/kebab_case_model.png"
+                                data-src="/gen?prompt=handsome+muscular+shirtless+man+with+hairy+chest+holding+a+long+wooden+staff+pose+digital+art+orange+lighting+intense&aspect=3:4"
+                                alt="kebab-case Presenter - man holding staff"
+                                class="rounded-lg shadow-2xl max-h-[500px] object-cover border-2 border-orange-500/50"
+                                style="aspect-ratio: 3/4;"
+                            >
+                        </div>
+                    </div>
+                    <!-- Train Case Content -->
+                    <div id="content-train" class="tab-content hidden grid md:grid-cols-2 gap-8 items-center animate-fade-in">
+                        <div class="order-2 md:order-1 space-y-4">
+                            <h3 class="text-3xl font-bold text-white font-brand flex items-center gap-2">
+                                <span class="material-symbols-outlined text-indigo-500">train</span>
+                                Train-Case
+                            </h3>
+                            <p class="text-lg text-gray-300">
+                                Chugging along with power and purpose. Capitalized and connected, ready to haul a heavy load.
+                            </p>
+                            <div class="bg-gray-900 p-4 rounded border-l-4 border-indigo-500">
+                                <code class="text-indigo-400 text-lg code-snippet">Big-Heavy-Load</code>
+                            </div>
+                            <div class="space-y-2">
+                                <h4 class="font-bold text-fuchsia-400 uppercase text-sm">The Technique</h4>
+                                <p class="text-sm text-gray-400">
+                                    Capitalized Words. Separated by a hyphen (
+                                    <code>-</code>
+                                    ). It's like a series of sturdy cars linked together, moving in rhythm.
+                                </p>
+                            </div>
+                            <div class="space-y-2">
+                                <h4 class="font-bold text-fuchsia-400 uppercase text-sm">Where to use it</h4>
+                                <p class="text-sm text-gray-400">
+                                    HTTP Headers. It's formal, structured, and ensures your payload gets delivered exactly where it needs to go without spilling a drop.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="order-1 md:order-2 flex justify-center">
+                            <img
+                                src="assets/train_case_model.png"
+                                data-src="/gen?prompt=handsome+muscular+shirtless+man+with+hairy+chest+holding+whiskey+glass+leaning+back+neon+purple+lighting+club+atmosphere+digital+art&aspect=16:9"
+                                alt="Train-Case Presenter - man leaning in neon club"
+                                class="rounded-lg shadow-2xl max-h-[500px] object-cover border-2 border-indigo-500/50"
+                                style="aspect-ratio: 16/9;"
+                            >
+                        </div>
+                    </div>
+                    <!-- Screaming Snake Content -->
+                    <div id="content-screaming" class="tab-content hidden grid md:grid-cols-2 gap-8 items-center animate-fade-in">
+                        <div class="order-2 md:order-1 space-y-4">
+                            <h3 class="text-3xl font-bold text-white font-brand flex items-center gap-2">
+                                <span class="material-symbols-outlined text-red-500">warning</span>
+                                SCREAMING_SNAKE
+                            </h3>
+                            <p class="text-lg text-gray-300">
+                                Loud, proud, and rock hard. This one doesn't soften for anybody.
+                            </p>
+                            <div class="bg-gray-900 p-4 rounded border-l-4 border-red-500">
+                                <code class="text-red-400 text-lg code-snippet">HARD_LIMIT_REACHED</code>
+                            </div>
+                            <div class="space-y-2">
+                                <h4 class="font-bold text-fuchsia-400 uppercase text-sm">The Technique</h4>
+                                <p class="text-sm text-gray-400">
+                                    ALL CAPS. Underscores. It's shouting at you. It's intense. It demands total submission. You don't change it; it changes you.
+                                </p>
+                            </div>
+                            <div class="space-y-2">
+                                <h4 class="font-bold text-fuchsia-400 uppercase text-sm">Where to use it</h4>
+                                <p class="text-sm text-gray-400">
+                                    Constants. Values that are forbidden from changing. Once you set it, it stays that way forever.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="order-1 md:order-2 flex justify-center">
+                            <img
+                                src="assets/screaming_case_model.png"
+                                data-src="/gen?prompt=handsome+muscular+shirtless+man+with+hairy+chest+yelling+excitedly+arms+wide+open+digital+art+red+lighting+sweaty+and+intense&aspect=3:4"
+                                alt="SCREAMING_SNAKE_CASE Presenter - man yelling excitedly"
+                                class="rounded-lg shadow-2xl max-h-[500px] object-cover border-2 border-red-500/50"
+                                style="aspect-ratio: 3/4;"
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- The Forbidden Zone -->
+        <section id="forbidden" class="py-20 relative overflow-hidden">
+            <div class="absolute inset-0 bg-red-900/10"></div>
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="text-center mb-16">
+                    <span class="material-symbols-outlined text-6xl text-red-500 mb-4 animate-pulse">block</span>
+                    <h2 class="text-4xl md:text-5xl font-bold text-white font-brand">
+                        The
+                        <span class="text-red-500">Forbidden</span>
+                        Zone
+                    </h2>
+                    <p class="text-xl text-gray-400 mt-4 max-w-2xl mx-auto">Some things are just too naughty, even for us. Trying these will break the mood immediately.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <!-- Visual -->
+                    <div class="flex justify-center">
+                        <img
+                            src="assets/forbidden_stern_look.png"
+                            data-src="/gen?prompt=handsome+muscular+shirtless+man+with+hairy+chest+looking+stern+and+disapproving+arms+crossed+digital+art+red+lighting+dark+shadows&aspect=1:1"
+                            alt="Stern Disapproval - man with arms crossed looking disapproving"
+                            class="rounded-full w-64 h-64 md:w-96 md:h-96 object-cover border-4 border-red-600 shadow-[0_0_30px_rgba(220,38,38,0.5)] grayscale hover:grayscale-0 transition duration-500"
+                        >
+                    </div>
+                    <!-- Explanation -->
+                    <div class="space-y-8">
+                        <div class="bg-black/50 p-6 rounded-xl border border-red-500/30">
+                            <h3 class="text-2xl font-bold text-red-400 flex items-center gap-2 mb-2">
+                                <span class="material-symbols-outlined">space_bar</span>
+                                No Spaces Allowed
+                            </h3>
+                            <p class="text-gray-300">
+                                "You can't have gaps in your package. It ruins the friction."
+                            </p>
+                            <p class="text-sm text-gray-500 mt-2">
+                                A computer reads a space as "Stop! I'm done!" If you write
+                                <code>sexy man</code>
+                                , the computer thinks
+                                <code>sexy</code>
+                                is one thing and
+                                <code>man</code>
+                                is a totally different surprise it wasn't expecting. Keep it tight. Keep it connected.
+                            </p>
+                        </div>
+                        <div class="bg-black/50 p-6 rounded-xl border border-red-500/30">
+                            <h3 class="text-2xl font-bold text-red-400 flex items-center gap-2 mb-2">
+                                <span class="material-symbols-outlined">fiber_manual_record</span>
+                                No Periods
+                            </h3>
+                            <p class="text-gray-300">
+                                "Don't stop the flow until you're truly finished."
+                            </p>
+                            <p class="text-sm text-gray-500 mt-2">
+                                In many languages, a dot means "enter inside me." (e.g.,
+                                <code>User.name</code>
+                                accesses the name *inside* the User). If you use a dot in the name itself, the computer tries to penetrate an object that isn't ready. Always ask for consent (by defining the object first).
+                            </p>
+                        </div>
+                        <div class="bg-black/50 p-6 rounded-xl border border-red-500/30">
+                            <h3 class="text-2xl font-bold text-red-400 flex items-center gap-2 mb-2">
+                                <span class="material-symbols-outlined">horizontal_rule</span>
+                                flatcase
+                            </h3>
+                            <p class="text-gray-300">
+                                "Limp and lifeless."
+                            </p>
+                            <p class="text-sm text-gray-500 mt-2">
+                                <code>alllowercase</code>
+                                with no definition, no humps, no length. Just a sad, shapeless blob of text. Hard to read, hard to love. Don't be a flatcase.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- The Exchange (API Standards) -->
+        <section id="api-standards" class="py-16 bg-[#150d1c] border-t border-purple-900/30">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 font-brand">
+                    The
+                    <span class="text-fuchsia-500">Exchange</span>
+                    Protocol
+                </h2>
+                <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
+                    When two systems want to... interface... they need to agree on how to touch each other. Here are the standards for a safe and pleasurable data exchange.
+                </p>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- JSON Keys -->
+                    <div class="bg-black/40 p-6 rounded-xl border border-purple-500/20 hover:border-fuchsia-500/50 transition group">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="material-symbols-outlined text-yellow-500 text-3xl group-hover:scale-110 transition">data_object</span>
+                            <h3 class="text-xl font-bold text-white">JSON Bodies</h3>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-4">
+                            The payload. The meat. When sending a JSON body, most modern APIs prefer the gentle curves of
+                            <strong class="text-yellow-400">camelCase</strong>
+                            .
+                        </p>
+                        <div class="bg-black/60 p-3 rounded text-xs font-mono text-gray-300 border-l-2 border-yellow-500">
+                            { "userPreferences": { "likesItRough": true } }
+                        </div>
+                        <p class="text-xs text-gray-500 mt-3 italic">
+                            *Unless you're talking to Python or Ruby backends, then they might want the long snake.
+                        </p>
+                    </div>
+                    <!-- Query Params -->
+                    <div class="bg-black/40 p-6 rounded-xl border border-purple-500/20 hover:border-fuchsia-500/50 transition group">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="material-symbols-outlined text-orange-500 text-3xl group-hover:scale-110 transition">link</span>
+                            <h3 class="text-xl font-bold text-white">URL Parameters</h3>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-4">
+                            The address. How you find the spot. URLs are case-insensitive, so keep it lowercase. Use
+                            <strong class="text-orange-400">kebab-case</strong>
+                            or
+                            <strong class="text-green-400">snake_case</strong>
+                            .
+                        </p>
+                        <div class="bg-black/60 p-3 rounded text-xs font-mono text-gray-300 border-l-2 border-orange-500">
+                            /api/users?sort-by=date&include_images=true
+                        </div>
+                        <p class="text-xs text-gray-500 mt-3 italic">
+                            *Never use camelCase here. Some servers convert everything to lowercase, and your hump will get flattened.
+                        </p>
+                    </div>
+                    <!-- Headers -->
+                    <div class="bg-black/40 p-6 rounded-xl border border-purple-500/20 hover:border-fuchsia-500/50 transition group">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="material-symbols-outlined text-purple-500 text-3xl group-hover:scale-110 transition">http</span>
+                            <h3 class="text-xl font-bold text-white">HTTP Headers</h3>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-4">
+                            The foreplay. Setting the mood before the request. The standard here is
+                            <strong class="text-purple-400">Train-Case</strong>
+                            (or Kebab-Pascal).
+                        </p>
+                        <div class="bg-black/60 p-3 rounded text-xs font-mono text-gray-300 border-l-2 border-purple-500">
+                            Content-Type: application/json
+                            <br>
+                            X-Auth-Token: 12345
+                        </div>
+                        <p class="text-xs text-gray-500 mt-3 italic">
+                            *Capitalize the first letter of each word. It shows respect.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Interactive Tool Section -->
+        <section id="toy" class="py-20 bg-gradient-to-b from-[#120a18] to-[#2d1b36]">
+            <div class="container mx-auto px-4 max-w-4xl">
+                <h2 class="text-3xl md:text-5xl font-bold text-center mb-8 font-brand">
+                    The
+                    <span class="text-fuchsia-500 neon-text">Transmuter</span>
+                    Toy
+                </h2>
+                <p class="text-center text-gray-400 mb-12">
+                    Type in your raw, dirty text below, and watch us massage it into every position imaginable.
+                </p>
+                <div class="bg-gray-900/80 backdrop-blur rounded-2xl p-8 shadow-2xl border border-fuchsia-500/30">
+                    <!-- Input -->
+                    <div class="mb-8">
+                        <label class="block text-fuchsia-400 font-bold mb-2 uppercase tracking-wider text-xs">Insert Raw Text</label>
+                        <input
+                            type="text"
+                            id="rawInput"
+                            placeholder="Enter text here..."
+                            class="w-full bg-black/50 border-b-2 border-gray-600 focus:border-fuchsia-500 outline-none text-2xl text-white py-4 px-2 transition-colors placeholder-gray-700"
+                        >
+                    </div>
+                    <!-- Results Grid -->
+                    <div id="resultsArea" class="grid gap-4">
+                        <!-- Results generated by JS -->
+                        <div class="p-4 rounded bg-black/30 text-center text-gray-500 italic">
+                            Waiting for insertion...
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="bg-black py-8 text-center border-t border-purple-900/50 mt-auto">
+            <p class="text-gray-500 text-sm">
+                &copy; 2026 Bit Gravy. Remember: Always sanitize your inputs.
+                <br>
+                <a href="privacy.html" class="text-fuchsia-500 hover:text-fuchsia-400 text-xs mt-2 inline-block">Privacy Policy</a>
+                <br>
+                <span class="text-xs opacity-50">No actual developers were harmed in the making of these puns.</span>
+            </p>
+        </footer>
+        <!-- JavaScript -->
+        <script>
+        // Tab Logic
+        function switchTab(tabName) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('tab-active', 'border-fuchsia-500', 'text-fuchsia-500');
+                btn.classList.add('border-transparent');
+            });
+            document.getElementById(`content-${tabName}`).classList.remove('hidden');
+            const btn = document.getElementById(`btn-${tabName}`);
+            btn.classList.add('tab-active', 'text-fuchsia-500');
+            btn.classList.remove('border-transparent');
+        }
+
+        // Converter Logic
+        const rawInput = document.getElementById('rawInput');
+        const resultsArea = document.getElementById('resultsArea');
+
+        rawInput.addEventListener('input', (e) => {
+            const val = e.target.value;
+            if (!val.trim()) {
+                resultsArea.innerHTML = '<div class="p-4 rounded bg-black/30 text-center text-gray-500 italic">Waiting for insertion...</div>';
+                return;
+            }
+            updateResults(val);
+        });
+
+        function updateResults(text) {
+            let words = text.match(/[A-Za-z0-9]+/g) || [];
+            if (words.length === 0) return;
+
+            const camel = words.map((w, i) => i === 0 ? w.toLowerCase() : w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()).join('');
+            const pascal = words.map(w => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()).join('');
+            const snake = words.map(w => w.toLowerCase()).join('_');
+            const kebab = words.map(w => w.toLowerCase()).join('-');
+            const screaming = words.map(w => w.toUpperCase()).join('_');
+            const train = words.map(w => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()).join('-');
+            const dot = words.map(w => w.toLowerCase()).join('.');
+
+            resultsArea.innerHTML = `
+                ${createResultCard('camelCase', camel, 'text-yellow-400', 'The gentle hump.')}
+                ${createResultCard('PascalCase', pascal, 'text-blue-400', 'Standing tall.')}
+                ${createResultCard('snake_case', snake, 'text-green-400', 'Long and connected.')}
+                ${createResultCard('kebab-case', kebab, 'text-orange-400', 'Skewered through.')}
+                ${createResultCard('SCREAMING_CASE', screaming, 'text-red-500', 'DOMINANT.')}
+                ${createResultCard('Train-Case', train, 'text-purple-400', 'Pumping up the front.')}
+                ${createResultCard('dot.case', dot, 'text-pink-400', 'Just the tip.')}
+            `;
+        }
+
+        function createResultCard(label, value, colorClass, comment) {
+            return `
+                <div class="flex items-center justify-between bg-black/40 p-4 rounded border border-white/5 hover:border-fuchsia-500/50 transition group">
+                    <div>
+                        <span class="text-xs uppercase text-gray-500 font-bold tracking-widest">${label}</span>
+                        <div class="text-xl md:text-2xl font-mono ${colorClass} break-all">${value}</div>
+                        <div class="text-xs text-gray-600 italic mt-1">${comment}</div>
+                    </div>
+                    <button onclick="navigator.clipboard.writeText('${value}')" class="text-gray-500 hover:text-white transition opacity-0 group-hover:opacity-100 p-2" title="Copy to clipboard">
+                        <span class="material-symbols-outlined">content_copy</span>
+                    </button>
+                </div>
+            `;
+        }
+
+        // Cookie helper functions
+        function setCookie(name, value, days = 365) {
+            const date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            const expires = "expires=" + date.toUTCString();
+            document.cookie = name + "=" + value + ";" + expires + ";path=/";
+        }
+        
+        function getCookie(name) {
+            const nameEQ = name + "=";
+            const cookies = document.cookie.split(';');
+            for(let i = 0; i < cookies.length; i++) {
+                let cookie = cookies[i].trim();
+                if (cookie.indexOf(nameEQ) === 0) {
+                    return cookie.substring(nameEQ.length, cookie.length);
+                }
+            }
+            return null;
+        }
+
+        // Disclaimer Modal Functions
+        function acceptDisclaimer() {
+            setCookie('disclaimerAccepted', 'true', 365);
+            document.getElementById('disclaimerModal').style.display = 'none';
+        }
+        
+        function rejectDisclaimer() {
+            window.location.href = 'about:blank';
+        }
+        
+        // Check disclaimer on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const disclaimerAccepted = getCookie('disclaimerAccepted');
+            if (disclaimerAccepted === 'true') {
+                document.getElementById('disclaimerModal').style.display = 'none';
+            } else {
+                document.getElementById('disclaimerModal').style.display = 'flex';
+            }
+        });
+
+        // Download Modal Functions
+        function openDownloadModal() {
+            document.getElementById('downloadModal').classList.remove('hidden');
+            document.getElementById('acceptTerms').checked = false;
+            document.getElementById('downloadBtn').disabled = true;
+        }
+        
+        function closeDownloadModal() {
+            document.getElementById('downloadModal').classList.add('hidden');
+        }
+        
+        function proceedWithDownload() {
+            if (document.getElementById('acceptTerms').checked) {
+                closeDownloadModal();
+                downloadSource();
+            }
+        }
+        
+        // Enable download button only when terms are accepted
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('acceptTerms').addEventListener('change', function() {
+                document.getElementById('downloadBtn').disabled = !this.checked;
+            });
+        });
+
+        // Download Source Functionality (The "Export" Feature)
+        function downloadSource() {
+            // Get the current HTML
+            const htmlContent = document.documentElement.outerHTML;
+            
+            // Create a blob
+            const blob = new Blob([htmlContent], {type: 'text/html'});
+            const url = URL.createObjectURL(blob);
+            
+            // Create a link and trigger download
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'naughty-nomenclature.html';
+            document.body.appendChild(a);
+            a.click();
+            
+            // Clean up
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+        </script>
+        <!--
+"/gen?prompt=dark+lounge+background+with+purple+neon+lights+and+velvet+textures+abstract&aspect=16:9"
+"/gen?prompt=handsome+muscular+man+with+hairy+chest+shirtless+wearing+stylish+glasses+and+jeans+leaning+against+a+desk+winking+flirtatious+digital+art+purple+lighting+realistic&aspect=3:4"
+"/gen?prompt=handsome+muscular+shirtless+man+with+hairy+chest+flexing+bicep+side+view+digital+art+purple+and+yellow+lighting+confident+smirk&aspect=3:4"
+"/gen?prompt=handsome+muscular+shirtless+man+with+hairy+chest+standing+tall+hands+on+hips+heroic+pose+digital+art+blue+lighting+looking+up&aspect=3:4"
+"/gen?prompt=handsome+muscular+shirtless+man+with+hairy+chest+lounging+on+a+couch+relaxed+pose+digital+art+green+lighting+seductive+gaze&aspect=3:4"
+"/gen?prompt=handsome+muscular+shirtless+man+with+hairy+chest+holding+a+long+wooden+staff+pose+digital+art+orange+lighting+intense&aspect=3:4"
+"/gen?prompt=handsome+muscular+shirtless+man+with+hairy+chest+yelling+excitedly+arms+wide+open+digital+art+red+lighting+sweaty+and+intense&aspect=3:4"
+"/gen?prompt=handsome+muscular+shirtless+man+with+hairy+chest+looking+stern+and+disapproving+arms+crossed+digital+art+red+lighting+dark+shadows&aspect=1:1"
+-->
+        <!-- Download License Modal -->
+        <div id="downloadModal" class="hidden fixed inset-0 bg-black/80 flex items-center justify-center z-50">
+            <div class="bg-gradient-to-br from-[#1a0f2e] to-[#2d1b4e] border border-fuchsia-500/50 rounded-2xl shadow-2xl max-w-2xl w-full mx-4 p-8">
+                <h2 class="text-3xl font-bold text-fuchsia-300 mb-6">Download Terms & License</h2>
+                <div class="bg-black/40 rounded-lg p-6 mb-6 max-h-80 overflow-y-auto">
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        This project is licensed under the
+                        <strong>MIT License</strong>
+                        . By downloading and using this source code, you agree to the following terms:
+                    </p>
+                    <div class="space-y-4 text-sm text-gray-400">
+                        <div>
+                            <h3 class="font-bold text-fuchsia-300 mb-2">✓ You are free to:</h3>
+                            <ul class="list-disc list-inside space-y-1">
+                                <li>Use this code for commercial and private purposes</li>
+                                <li>Modify and adapt the code</li>
+                                <li>Distribute copies of the code</li>
+                                <li>Include this code in your own projects</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-fuchsia-300 mb-2">⚠ You must:</h3>
+                            <ul class="list-disc list-inside space-y-1">
+                                <li>Include the original license and copyright notice</li>
+                                <li>Provide a copy of the MIT License with your distribution</li>
+                                <li>State significant changes made to the code</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-fuchsia-300 mb-2">✗ The software is provided "AS IS":</h3>
+                            <ul class="list-disc list-inside space-y-1">
+                                <li>Without warranty of any kind</li>
+                                <li>Without liability for any damages</li>
+                                <li>Use at your own risk</li>
+                            </ul>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-4 pt-4 border-t border-gray-700">
+                            For the full MIT License text, visit:
+                            <span class="text-fuchsia-400">https://opensource.org/licenses/MIT</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 mb-6">
+                    <input type="checkbox" id="acceptTerms" class="w-5 h-5 cursor-pointer rounded border-fuchsia-500 text-fuchsia-600">
+                    <label for="acceptTerms" class="text-gray-300 cursor-pointer">
+                        I understand and accept these terms
+                    </label>
+                </div>
+                <div class="flex gap-4">
+                    <button onclick="closeDownloadModal()" class="flex-1 bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 rounded-lg transition">
+                        Cancel
+                    </button>
+                    <button
+                        onclick="proceedWithDownload()"
+                        id="downloadBtn"
+                        class="flex-1 bg-fuchsia-600 hover:bg-fuchsia-700 disabled:opacity-50 disabled:cursor-not-allowed text-white font-bold py-3 rounded-lg transition"
+                        disabled
+                    >
+                        Download Source
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
