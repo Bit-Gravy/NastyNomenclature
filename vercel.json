@@ -1,17 +1,4 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": ".",
-  "framework": "static",
-  "env": [],
-  "regions": ["sfo1"],
-  "functions": {},
-  "routes": [
-    {
-      "src": "^/((?!\\.).*)",
-      "dest": "index.html"
-    }
-  ],
-  "redirects": [],
   "headers": [
     {
       "source": "/js/(.*)",

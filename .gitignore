@@ -41,3 +41,5 @@ build/
 
 # System files
 *.log
+.vercel
+.env*.local
